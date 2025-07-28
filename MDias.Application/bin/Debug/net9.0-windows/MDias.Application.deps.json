@@ -1,0 +1,110 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "MDias.Application/1.0.0": {
+        "dependencies": {
+          "Guna.UI2.WinForms": "2.0.4.7",
+          "Krypton.Toolkit": "95.25.6.174",
+          "ReaLTaiizor": "3.8.1.3"
+        },
+        "runtime": {
+          "MDias.Application.dll": {}
+        }
+      },
+      "Guna.UI2.WinForms/2.0.4.7": {
+        "dependencies": {
+          "System.Management": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0-windows7.0/Guna.UI2.dll": {
+            "assemblyVersion": "2.0.4.7",
+            "fileVersion": "2.0.4.7"
+          }
+        }
+      },
+      "Krypton.Toolkit/95.25.6.174": {
+        "runtime": {
+          "lib/net9.0-windows7.0/Krypton.Toolkit.dll": {
+            "assemblyVersion": "95.25.6.174",
+            "fileVersion": "95.25.6.174"
+          }
+        }
+      },
+      "ReaLTaiizor/3.8.1.3": {
+        "runtime": {
+          "lib/net9.0-windows7.0/ReaLTaiizor.dll": {
+            "assemblyVersion": "3.8.1.3",
+            "fileVersion": "3.8.1.3"
+          }
+        }
+      },
+      "System.CodeDom/7.0.0": {},
+      "System.Management/7.0.0": {
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/System.Management.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/System.Management.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MDias.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Guna.UI2.WinForms/2.0.4.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8BdBYsfnntuICbFMHIZsd5morwURN8Ucsvq7wJeyLV1Z1ze6CAIxVKEirufgjGIiXfF0M0sCr9EVFloZSazWew==",
+      "path": "guna.ui2.winforms/2.0.4.7",
+      "hashPath": "guna.ui2.winforms.2.0.4.7.nupkg.sha512"
+    },
+    "Krypton.Toolkit/95.25.6.174": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eTMEp/UGtcLZzGA9Nl202WUM6SpkdXnQIJLXiMRKwthuuVSvH/vLQFy2J7PVrwU53rKOI69KQ8LGjZIUkrXJvg==",
+      "path": "krypton.toolkit/95.25.6.174",
+      "hashPath": "krypton.toolkit.95.25.6.174.nupkg.sha512"
+    },
+    "ReaLTaiizor/3.8.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZIIXX5Elr/+Z+LDHviUQGQa3O3Ah2oDIIaYKwm5gpAHcxGWsjIsidsXQBWU1c8mrZHx3JmHr8SS4hmf9Ohpm6w==",
+      "path": "realtaiizor/3.8.1.3",
+      "hashPath": "realtaiizor.3.8.1.3.nupkg.sha512"
+    },
+    "System.CodeDom/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GLltyqEsE5/3IE+zYRP5sNa1l44qKl9v+bfdMcwg+M9qnQf47wK3H0SUR/T+3N4JEQXF3vV4CSuuo0rsg+nq2A==",
+      "path": "system.codedom/7.0.0",
+      "hashPath": "system.codedom.7.0.0.nupkg.sha512"
+    },
+    "System.Management/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A4jed4QUviDOm7fJNKAJObEAEkEUXmkGL/w0iyCYTzrl1rezTj8LGFHfsVst4Vb9JwFcTpboiDrvdST48avBpw==",
+      "path": "system.management/7.0.0",
+      "hashPath": "system.management.7.0.0.nupkg.sha512"
+    }
+  }
+}
