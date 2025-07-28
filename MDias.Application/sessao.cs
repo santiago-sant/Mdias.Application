@@ -8,6 +8,7 @@ namespace MDias.Application
 {
     internal class sessao
     {
-        public static int IdLiderLogado { get; set; }
+        public static int IdLogado { get; set; }
+        public static string TipoUsuario { get; set; }
     }
 }

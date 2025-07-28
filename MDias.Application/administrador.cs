@@ -18,18 +18,20 @@ namespace MDias.Application
             get { return id; }
             set { id = value; }
         }
+
         public string Nome
         {
             get { return nome; }
             set { nome = value; }
         }
+
         public string Senha
         {
             get { return senha; }
             set { senha = value; }
         }
-        
-        public bool cadastrarLider(string nome, string endereco, string senha, int telefone, string cpf)
+
+        public bool cadastrarAdm(string nome, string endereco, string senha, int telefone, string cpf)
         {
             try
             {
@@ -66,11 +68,10 @@ namespace MDias.Application
             catch (Exception ex)
             {
                 throw new Exception("Erro ao criptografar senha: " + ex.Message);
-
             }
         }
 
-        public bool verificarAdm()
+        public int? verificarAdm()
         {
             try
             {
@@ -81,15 +82,19 @@ namespace MDias.Application
                     MySqlCommand comando = new MySqlCommand(query, conexao);
                     comando.Parameters.AddWithValue("@Nome", Nome);
                     comando.Parameters.AddWithValue("@Senha", senhaCriptografada);
-                    MySqlDataReader reader = comando.ExecuteReader();
-                    return reader.HasRows;
+                    object result = comando.ExecuteScalar(); // retorna o primeiro valor encontrado
+
+                    if (result != null)
+                    {
+                        return Convert.ToInt32(result); // login válido, retorna ID
+                    }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao verificar usuário: " + ex.Message);
-                return false;
             }
+            return null; // login inválido
         }
     }
 }

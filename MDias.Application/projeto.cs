@@ -12,7 +12,6 @@ namespace MDias.Application
 {
     internal class projeto
     {
-
         private int id;
         private string nome;
         private string endereco;
@@ -108,7 +107,7 @@ namespace MDias.Application
             {
                 using (MySqlConnection conexaoBanco = new conexaoBD().conectar())
                 {
-                    string listar = "SELECT * FROM projetos WHERE id_lider = @idLider";
+                    string listar = "SELECT * FROM projeto WHERE id_lider = @idLider";
                     MySqlCommand comando = new MySqlCommand(listar, conexaoBanco);
                     comando.Parameters.AddWithValue("@idLider", sessao.IdLiderLogado);
                     MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
@@ -123,5 +122,25 @@ namespace MDias.Application
             return tabela;
         }
 
+        public static DataTable CarregarTodosProjetos()
+        {
+            DataTable tabela = new DataTable();
+            try
+            {
+                using (MySqlConnection conexaoBanco = new conexaoBD().conectar())
+                {
+                    string query = "SELECT * FROM projeto";
+                    MySqlCommand comando = new MySqlCommand(query, conexaoBanco);
+                    MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
+                    adaptador.Fill(tabela);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível carregar os projetos: " + ex.Message);
+                throw;
+            }
+            return tabela;
+        }
     }
 }
