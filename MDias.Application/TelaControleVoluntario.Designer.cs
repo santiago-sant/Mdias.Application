@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaControleVoluntario));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             txtBusca = new Guna.UI2.WinForms.Guna2TextBox();
             kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
@@ -75,8 +75,8 @@
             // txtBusca
             // 
             txtBusca.BorderRadius = 4;
-            txtBusca.CustomizableEdges = customizableEdges3;
-            txtBusca.DefaultText = "Nome";
+            txtBusca.CustomizableEdges = customizableEdges13;
+            txtBusca.DefaultText = "";
             txtBusca.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtBusca.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             txtBusca.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
@@ -87,11 +87,11 @@
             txtBusca.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtBusca.IconLeft = (Image)resources.GetObject("txtBusca.IconLeft");
             txtBusca.Location = new Point(18, 60);
-            txtBusca.Margin = new Padding(4, 4, 4, 4);
+            txtBusca.Margin = new Padding(4);
             txtBusca.Name = "txtBusca";
-            txtBusca.PlaceholderText = "";
+            txtBusca.PlaceholderText = "Nome";
             txtBusca.SelectedText = "";
-            txtBusca.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtBusca.ShadowDecoration.CustomizableEdges = customizableEdges14;
             txtBusca.Size = new Size(480, 23);
             txtBusca.TabIndex = 7;
             // 
@@ -137,16 +137,18 @@
             cadastrarToolStripMenuItem1.BackColor = Color.FromArgb(60, 63, 65);
             cadastrarToolStripMenuItem1.ForeColor = Color.FromArgb(220, 220, 220);
             cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            cadastrarToolStripMenuItem1.Size = new Size(161, 22);
+            cadastrarToolStripMenuItem1.Size = new Size(180, 22);
             cadastrarToolStripMenuItem1.Text = "Cadastrar";
+            cadastrarToolStripMenuItem1.Click += cadastrarToolStripMenuItem1_Click;
             // 
             // editarVToolStripMenuItem
             // 
             editarVToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarVToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarVToolStripMenuItem.Name = "editarVToolStripMenuItem";
-            editarVToolStripMenuItem.Size = new Size(161, 22);
+            editarVToolStripMenuItem.Size = new Size(180, 22);
             editarVToolStripMenuItem.Text = "Editar Voluntário";
+            editarVToolStripMenuItem.Click += editarVToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
@@ -173,16 +175,18 @@
             cadastrarToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cadastrarToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            cadastrarToolStripMenuItem.Size = new Size(145, 22);
+            cadastrarToolStripMenuItem.Size = new Size(180, 22);
             cadastrarToolStripMenuItem.Text = "Cadastrar";
+            cadastrarToolStripMenuItem.Click += cadastrarToolStripMenuItem_Click;
             // 
             // editarProjetoToolStripMenuItem
             // 
             editarProjetoToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarProjetoToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarProjetoToolStripMenuItem.Name = "editarProjetoToolStripMenuItem";
-            editarProjetoToolStripMenuItem.Size = new Size(145, 22);
+            editarProjetoToolStripMenuItem.Size = new Size(180, 22);
             editarProjetoToolStripMenuItem.Text = "Editar Projeto";
+            editarProjetoToolStripMenuItem.Click += editarProjetoToolStripMenuItem_Click;
             // 
             // toolStripSeparator2
             // 
@@ -209,16 +213,18 @@
             cadastroToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cadastroToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(133, 22);
+            cadastroToolStripMenuItem.Size = new Size(180, 22);
             cadastroToolStripMenuItem.Text = "Cadastro";
+            cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
             // editarLIderToolStripMenuItem
             // 
             editarLIderToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarLIderToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarLIderToolStripMenuItem.Name = "editarLIderToolStripMenuItem";
-            editarLIderToolStripMenuItem.Size = new Size(133, 22);
+            editarLIderToolStripMenuItem.Size = new Size(180, 22);
             editarLIderToolStripMenuItem.Text = "Editar LIder";
+            editarLIderToolStripMenuItem.Click += editarLIderToolStripMenuItem_Click;
             // 
             // thunderControlBox1
             // 
@@ -226,7 +232,7 @@
             thunderControlBox1.BackColor = Color.Transparent;
             thunderControlBox1.DefaultLocation = true;
             thunderControlBox1.ForeColor = Color.White;
-            thunderControlBox1.Location = new Point(634, 2);
+            thunderControlBox1.Location = new Point(633, 3);
             thunderControlBox1.Margin = new Padding(3, 2, 3, 2);
             thunderControlBox1.Name = "thunderControlBox1";
             thunderControlBox1.Size = new Size(64, 18);

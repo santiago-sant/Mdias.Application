@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLogin));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
             txtSenha = new Guna.UI2.WinForms.Guna2TextBox();
@@ -79,8 +79,8 @@
             // txtSenha
             // 
             txtSenha.BorderRadius = 4;
-            txtSenha.CustomizableEdges = customizableEdges5;
-            txtSenha.DefaultText = "Senha ";
+            txtSenha.CustomizableEdges = customizableEdges1;
+            txtSenha.DefaultText = "";
             txtSenha.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtSenha.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             txtSenha.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
@@ -90,19 +90,20 @@
             txtSenha.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtSenha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSenha.Location = new Point(55, 158);
-            txtSenha.Margin = new Padding(4, 4, 4, 4);
+            txtSenha.Margin = new Padding(4);
             txtSenha.Name = "txtSenha";
-            txtSenha.PlaceholderText = "";
+            txtSenha.PasswordChar = '.';
+            txtSenha.PlaceholderText = "Senha ";
             txtSenha.SelectedText = "";
-            txtSenha.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtSenha.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtSenha.Size = new Size(325, 23);
             txtSenha.TabIndex = 5;
             // 
             // txtUsuario
             // 
             txtUsuario.BorderRadius = 4;
-            txtUsuario.CustomizableEdges = customizableEdges7;
-            txtUsuario.DefaultText = "Usuário";
+            txtUsuario.CustomizableEdges = customizableEdges3;
+            txtUsuario.DefaultText = "";
             txtUsuario.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtUsuario.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             txtUsuario.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
@@ -112,11 +113,11 @@
             txtUsuario.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsuario.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtUsuario.Location = new Point(55, 100);
-            txtUsuario.Margin = new Padding(4, 4, 4, 4);
+            txtUsuario.Margin = new Padding(4);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.PlaceholderText = "";
+            txtUsuario.PlaceholderText = "Usuário";
             txtUsuario.SelectedText = "";
-            txtUsuario.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtUsuario.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtUsuario.Size = new Size(325, 23);
             txtUsuario.TabIndex = 4;
             // 
@@ -142,7 +143,7 @@
             thunderControlBox1.BackColor = Color.Transparent;
             thunderControlBox1.DefaultLocation = true;
             thunderControlBox1.ForeColor = Color.White;
-            thunderControlBox1.Location = new Point(634, 2);
+            thunderControlBox1.Location = new Point(633, 3);
             thunderControlBox1.Margin = new Padding(3, 2, 3, 2);
             thunderControlBox1.Name = "thunderControlBox1";
             thunderControlBox1.Size = new Size(64, 18);

@@ -66,5 +66,47 @@ namespace MDias.Application
                 MessageBox.Show("Erro inesperado: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TelaVoluntario telaVolutario = new TelaVoluntario();
+            telaVolutario.Show();
+            this.Hide();
+        }
+
+        private void editarVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaControleVoluntario telaControleVoluntario = new TelaControleVoluntario();
+            telaControleVoluntario.Show();
+            this.Hide();
+        }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaProjeto telaProjeto = new TelaProjeto();
+            telaProjeto.Show();
+            this.Hide();
+        }
+
+        private void editarProjetoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaControleProjeto telaControleProjeto = new TelaControleProjeto();
+            telaControleProjeto.Show();
+            this.Hide();
+        }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaLíder telaLider = new TelaLíder();
+            telaLider.Show();
+            this.Hide();
+        }
+
+        private void editarLIderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaControleLider telaControleLider = new TelaControleLider();
+            telaControleLider.Show();
+            this.Hide();
+        }
     }
 }
