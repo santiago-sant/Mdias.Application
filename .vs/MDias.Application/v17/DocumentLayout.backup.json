@@ -3,80 +3,104 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telal\u00EDder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telal\u00EDder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\telavoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telavoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\lider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\lider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telacontrolelider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontrolelider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telalogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\voluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\voluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telacontrolevoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontrolevoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telavoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telavoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\lider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\lider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\projeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\projeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telaprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telaprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\conexaobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\conexaobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telal\u00EDder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telal\u00EDder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\telacontrolevoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontrolevoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\telacontrolelider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontrolelider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telacontrolelider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontrolelider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\telacontroleprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontroleprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telacontroleprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontroleprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telacontrolevoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontrolevoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\telal\u00EDder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telal\u00EDder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\telaprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telaprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telaprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telaprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\telavoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telavoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\mdias.application\\telavoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telavoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\conexaobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\conexaobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\telaprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telaprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\source\\repos\\mdias.application\\mdias.application\\voluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\voluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,11 +110,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "TelaLogin.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaLogin.cs",
               "RelativeDocumentMoniker": "MDias.Application\\TelaLogin.cs",
@@ -103,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "TelaPrincipal.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaPrincipal.cs",
               "RelativeDocumentMoniker": "MDias.Application\\TelaPrincipal.cs",
@@ -116,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "TelaVoluntario.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaVoluntario.cs",
               "RelativeDocumentMoniker": "MDias.Application\\TelaVoluntario.cs",
@@ -129,12 +153,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "TelaControleVoluntario.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleVoluntario.cs",
               "RelativeDocumentMoniker": "MDias.Application\\TelaControleVoluntario.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleVoluntario.cs [Projeto]",
-              "RelativeToolTip": "MDias.Application\\TelaControleVoluntario.cs [Projeto]",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleVoluntario.cs [Projeto]*",
+              "RelativeToolTip": "MDias.Application\\TelaControleVoluntario.cs [Projeto]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T18:36:57.909Z",
               "IsPinned": true,
@@ -142,56 +166,131 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "TelaProjeto.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaProjeto.cs",
               "RelativeDocumentMoniker": "MDias.Application\\TelaProjeto.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaProjeto.cs [Projeto]",
-              "RelativeToolTip": "MDias.Application\\TelaProjeto.cs [Projeto]",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaProjeto.cs [Projeto]*",
+              "RelativeToolTip": "MDias.Application\\TelaProjeto.cs [Projeto]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T19:17:09.727Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TelaControleProjeto.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleProjeto.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\TelaControleProjeto.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleProjeto.cs [Projeto]",
-              "RelativeToolTip": "MDias.Application\\TelaControleProjeto.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T20:31:10.619Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "TelaL\u00EDder.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaL\u00EDder.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\TelaL\u00EDder.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaL\u00EDder.cs [Projeto]",
-              "RelativeToolTip": "MDias.Application\\TelaL\u00EDder.cs [Projeto]",
+              "Title": "TelaControleProjeto.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleProjeto.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaControleProjeto.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleProjeto.cs [Projeto]*",
+              "RelativeToolTip": "MDias.Application\\TelaControleProjeto.cs [Projeto]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T20:31:51.291Z",
-              "IsPinned": true
+              "WhenOpened": "2025-07-25T20:31:10.619Z",
+              "IsPinned": true,
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "TelaL\u00EDder.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaL\u00EDder.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaL\u00EDder.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaL\u00EDder.cs [Projeto]*",
+              "RelativeToolTip": "MDias.Application\\TelaL\u00EDder.cs [Projeto]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T20:31:51.291Z",
+              "IsPinned": true,
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "TelaControleLider.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleLider.cs",
               "RelativeDocumentMoniker": "MDias.Application\\TelaControleLider.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleLider.cs [Projeto]",
-              "RelativeToolTip": "MDias.Application\\TelaControleLider.cs [Projeto]",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleLider.cs [Projeto]*",
+              "RelativeToolTip": "MDias.Application\\TelaControleLider.cs [Projeto]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T23:08:02.155Z",
               "IsPinned": true,
               "EditorCaption": " [Projeto]"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\Form2.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\Form2.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\Form2.cs*",
+              "RelativeToolTip": "MDias.Application\\Form2.cs*",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAABwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T11:56:54.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\Form2.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\Form2.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\Form2.cs [Projeto]*",
+              "RelativeToolTip": "MDias.Application\\Form2.cs [Projeto]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T11:55:34.473Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "lider.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\lider.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\lider.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\lider.cs*",
+              "RelativeToolTip": "MDias.Application\\lider.cs*",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAYwJkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T19:38:42.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TelaControleProjeto.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleProjeto.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaControleProjeto.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleProjeto.cs*",
+              "RelativeToolTip": "MDias.Application\\TelaControleProjeto.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAMwDoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T11:13:28.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TelaL\u00EDder.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaL\u00EDder.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaL\u00EDder.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaL\u00EDder.cs*",
+              "RelativeToolTip": "MDias.Application\\TelaL\u00EDder.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAMwD8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T11:11:16.256Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -199,20 +298,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "administrador.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\administrador.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\administrador.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\administrador.cs",
-              "RelativeToolTip": "MDias.Application\\administrador.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAmwGMAAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "TelaLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaLogin.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaLogin.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaLogin.cs",
+              "RelativeToolTip": "MDias.Application\\TelaLogin.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwEcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T19:51:55.979Z",
+              "WhenOpened": "2025-07-24T19:04:12.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 24,
+              "Title": "voluntario.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\voluntario.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\voluntario.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\voluntario.cs",
+              "RelativeToolTip": "MDias.Application\\voluntario.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAYwI0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T19:34:14.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "projeto.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\projeto.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\projeto.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\projeto.cs*",
+              "RelativeToolTip": "MDias.Application\\projeto.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwHMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T19:36:40.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "sessao.cs",
               "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\sessao.cs",
               "RelativeDocumentMoniker": "MDias.Application\\sessao.cs",
@@ -225,53 +349,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "lider.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\lider.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\lider.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\lider.cs",
-              "RelativeToolTip": "MDias.Application\\lider.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAADwv8EAAAABAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "administrador.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\administrador.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\administrador.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\administrador.cs",
+              "RelativeToolTip": "MDias.Application\\administrador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T19:38:42.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-26T19:51:55.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "projeto.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\projeto.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\projeto.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\projeto.cs",
-              "RelativeToolTip": "MDias.Application\\projeto.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAUwJAAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "TelaControleLider.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleLider.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaControleLider.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleLider.cs*",
+              "RelativeToolTip": "MDias.Application\\TelaControleLider.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T19:36:40.022Z"
+              "WhenOpened": "2025-07-30T11:14:58.227Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "voluntario.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\voluntario.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\voluntario.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\voluntario.cs",
-              "RelativeToolTip": "MDias.Application\\voluntario.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAcwDgAAAAnAAAAAAAAAA==",
+              "Title": "conexaoBD.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\conexaoBD.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\conexaoBD.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\conexaoBD.cs*",
+              "RelativeToolTip": "MDias.Application\\conexaoBD.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T19:34:14.316Z",
+              "WhenOpened": "2025-07-26T19:25:35.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "conexaoBD.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\conexaoBD.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\conexaoBD.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\conexaoBD.cs",
-              "RelativeToolTip": "MDias.Application\\conexaoBD.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwA8AAAAiAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "TelaPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaPrincipal.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaPrincipal.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaPrincipal.cs",
+              "RelativeToolTip": "MDias.Application\\TelaPrincipal.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAawBgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T19:25:35.524Z"
+              "WhenOpened": "2025-07-24T19:58:16.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TelaVoluntario.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaVoluntario.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaVoluntario.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaVoluntario.cs",
+              "RelativeToolTip": "MDias.Application\\TelaVoluntario.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAawEcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T01:08:47.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TelaControleVoluntario.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleVoluntario.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaControleVoluntario.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaControleVoluntario.cs*",
+              "RelativeToolTip": "MDias.Application\\TelaControleVoluntario.cs*",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAnwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T13:58:52.654Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -279,28 +430,16 @@
               "Title": "TelaProjeto.cs",
               "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaProjeto.cs",
               "RelativeDocumentMoniker": "MDias.Application\\TelaProjeto.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaProjeto.cs",
-              "RelativeToolTip": "MDias.Application\\TelaProjeto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaProjeto.cs*",
+              "RelativeToolTip": "MDias.Application\\TelaProjeto.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAewBwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T19:20:54.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TelaVoluntario.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaVoluntario.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\TelaVoluntario.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaVoluntario.cs",
-              "RelativeToolTip": "MDias.Application\\TelaVoluntario.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAcwD8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T01:08:47.593Z",
+              "WhenOpened": "2025-07-25T19:20:54.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\Program.cs",
               "RelativeDocumentMoniker": "MDias.Application\\Program.cs",
@@ -309,31 +448,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-24T19:59:05.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TelaPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaPrincipal.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\TelaPrincipal.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaPrincipal.cs",
-              "RelativeToolTip": "MDias.Application\\TelaPrincipal.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAuwBoAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T19:58:16.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TelaLogin.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaLogin.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\TelaLogin.cs",
-              "ToolTip": "C:\\Users\\Aluno_Manha\\source\\repos\\Mdias.Application\\MDias.Application\\TelaLogin.cs",
-              "RelativeToolTip": "MDias.Application\\TelaLogin.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA9wBEAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T19:04:12.079Z",
-              "EditorCaption": ""
             }
           ]
         }

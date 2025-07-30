@@ -22,3 +22,24 @@ C:\Users\alvar\OneDrive\Área de Trabalho\MDias.Application\MDias.Application\ob
 C:\Users\alvar\OneDrive\Área de Trabalho\MDias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.pdb
 C:\Users\alvar\OneDrive\Área de Trabalho\MDias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.genruntimeconfig.cache
 C:\Users\alvar\OneDrive\Área de Trabalho\MDias.Application\MDias.Application\obj\Debug\net9.0-windows\ref\MDias.Application.dll
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.csproj.AssemblyReference.cache
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.Form1.resources
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.Form2.resources
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.Properties.Resources.resources
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.TelaControleLider.resources
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.TelaControleProjeto.resources
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.TelaControleVoluntario.resources
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.TelaLogin.resources
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.TelaLíder.resources
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.TelaPrincipal.resources
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.TelaProjeto.resources
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.TelaVoluntario.resources
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.csproj.GenerateResource.cache
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.AssemblyInfoInputs.cache
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.AssemblyInfo.cs
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.csproj.CoreCompileInputs.cache
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.sourcelink.json
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.dll
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\refint\MDias.Application.dll
+C:\Users\Aluno_Manha\source\repos\Mdias.Application\MDias.Application\obj\Debug\net9.0-windows\MDias.Application.pdb

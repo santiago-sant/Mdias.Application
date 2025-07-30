@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaControleVoluntario));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             txtBusca = new Guna.UI2.WinForms.Guna2TextBox();
             kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
@@ -75,7 +75,7 @@
             // txtBusca
             // 
             txtBusca.BorderRadius = 4;
-            txtBusca.CustomizableEdges = customizableEdges13;
+            txtBusca.CustomizableEdges = customizableEdges1;
             txtBusca.DefaultText = "";
             txtBusca.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtBusca.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -91,7 +91,7 @@
             txtBusca.Name = "txtBusca";
             txtBusca.PlaceholderText = "Nome";
             txtBusca.SelectedText = "";
-            txtBusca.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtBusca.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtBusca.Size = new Size(480, 23);
             txtBusca.TabIndex = 7;
             // 
@@ -131,6 +131,7 @@
             toolStripDropDownButton3.Name = "toolStripDropDownButton3";
             toolStripDropDownButton3.Size = new Size(74, 18);
             toolStripDropDownButton3.Text = "Voluntário";
+            toolStripDropDownButton3.Click += toolStripDropDownButton3_Click;
             // 
             // cadastrarToolStripMenuItem1
             // 
@@ -175,7 +176,7 @@
             cadastrarToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cadastrarToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            cadastrarToolStripMenuItem.Size = new Size(180, 22);
+            cadastrarToolStripMenuItem.Size = new Size(145, 22);
             cadastrarToolStripMenuItem.Text = "Cadastrar";
             cadastrarToolStripMenuItem.Click += cadastrarToolStripMenuItem_Click;
             // 
@@ -184,7 +185,7 @@
             editarProjetoToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarProjetoToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarProjetoToolStripMenuItem.Name = "editarProjetoToolStripMenuItem";
-            editarProjetoToolStripMenuItem.Size = new Size(180, 22);
+            editarProjetoToolStripMenuItem.Size = new Size(145, 22);
             editarProjetoToolStripMenuItem.Text = "Editar Projeto";
             editarProjetoToolStripMenuItem.Click += editarProjetoToolStripMenuItem_Click;
             // 
@@ -213,7 +214,7 @@
             cadastroToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cadastroToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(180, 22);
+            cadastroToolStripMenuItem.Size = new Size(133, 22);
             cadastroToolStripMenuItem.Text = "Cadastro";
             cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
@@ -222,7 +223,7 @@
             editarLIderToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarLIderToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarLIderToolStripMenuItem.Name = "editarLIderToolStripMenuItem";
-            editarLIderToolStripMenuItem.Size = new Size(180, 22);
+            editarLIderToolStripMenuItem.Size = new Size(133, 22);
             editarLIderToolStripMenuItem.Text = "Editar LIder";
             editarLIderToolStripMenuItem.Click += editarLIderToolStripMenuItem_Click;
             // 

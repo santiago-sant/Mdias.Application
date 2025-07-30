@@ -31,7 +31,7 @@ namespace MDias.Application
             set { senha = value; }
         }
 
-        public bool cadastrarAdm(string nome, string endereco, string senha, int telefone, string cpf)
+        public bool cadastrarAdm()
         {
             try
             {

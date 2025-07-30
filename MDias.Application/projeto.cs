@@ -109,7 +109,7 @@ namespace MDias.Application
                 {
                     string listar = "SELECT * FROM projeto WHERE id_lider = @idLider";
                     MySqlCommand comando = new MySqlCommand(listar, conexaoBanco);
-                    comando.Parameters.AddWithValue("@idLider", sessao.IdLiderLogado);
+                    comando.Parameters.AddWithValue("@idLider", sessao.IdLogado);
                     MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
                     adaptador.Fill(tabela);
                 }

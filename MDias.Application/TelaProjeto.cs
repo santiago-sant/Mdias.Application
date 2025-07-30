@@ -61,7 +61,9 @@ namespace MDias.Application
 
         private void editarLIderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            TelaControleLider telaControleLider = new TelaControleLider();
+            telaControleLider.Show();
+            this.Hide();
         }
     }
 }

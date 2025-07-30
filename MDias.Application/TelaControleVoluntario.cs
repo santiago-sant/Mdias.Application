@@ -58,5 +58,9 @@ namespace MDias.Application
             telaControleLider.Show();
             this.Hide();
         }
+
+        private void toolStripDropDownButton3_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

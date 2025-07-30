@@ -107,9 +107,9 @@ namespace MDias.Application
             {
                 using (MySqlConnection conexao = new conexaoBD().conectar())
                 {
-                    string query = "UPDATE lider SET ativo = 0 WHERE id = @Id";
+                    string query = "UPDATE lider SET ativo = 0 WHERE Id_Lider = @Id_Lider";
                     MySqlCommand comando = new MySqlCommand(query, conexao);
-                    comando.Parameters.AddWithValue("@Id", Id_Lider);
+                    comando.Parameters.AddWithValue("@Id_Lider", Id_Lider);
 
                     int linhasAfetadas = comando.ExecuteNonQuery();
                     return linhasAfetadas > 0;
@@ -128,9 +128,9 @@ namespace MDias.Application
             {
                 using (MySqlConnection conexao = new conexaoBD().conectar())
                 {
-                    string query = "UPDATE lider SET ativo = 1 WHERE id = @Id";
+                    string query = "UPDATE lider SET ativo = 1 WHERE Id_Lider = @Id_Lider";
                     MySqlCommand comando = new MySqlCommand(query, conexao);
-                    comando.Parameters.AddWithValue("@Id", Id_Lider);
+                    comando.Parameters.AddWithValue("@Id_Lider", Id_Lider);
 
                     int linhasAfetadas = comando.ExecuteNonQuery();
                     return linhasAfetadas > 0;
@@ -150,7 +150,7 @@ namespace MDias.Application
                 string senhaCriptografada = CriptografarSenha(Senha);
                 using (MySqlConnection conexao = new conexaoBD().conectar())
                 {
-                    string query = "SELECT id FROM lider WHERE Nome=@Nome AND Senha=@Senha AND ativo=1";
+                    string query = "SELECT Id_Lider FROM lider WHERE Nome=@Nome AND Senha=@Senha AND ativo=1";
                     MySqlCommand comando = new MySqlCommand(query, conexao);
                     comando.Parameters.AddWithValue("@Nome", Nome);
                     comando.Parameters.AddWithValue("@Senha", senhaCriptografada);
