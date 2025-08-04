@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿    using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -58,16 +58,21 @@ namespace MDias.Application
         {
             try
             {
-                using MySqlConnection conexao = new conexaoBD().conectar();
-                string query = "INSERT INTO voluntario (nome, telefone, cpf, endereco, habilidade) VALUES (@nome, @telefone, @cpf, @endereco, @habilidade)";
-                MySqlCommand cmd = new MySqlCommand(query, conexao);
-                cmd.Parameters.AddWithValue("@nome", nome);
-                cmd.Parameters.AddWithValue("@telefone", telefone);
-                cmd.Parameters.AddWithValue("@cpf", cpf);
-                cmd.Parameters.AddWithValue("@endereco", endereco);
-                cmd.Parameters.AddWithValue("@habilidade", habilidade);
-                int resultado = cmd.ExecuteNonQuery();
-                return resultado > 0;
+                using (MySqlConnection conexao = new conexaoBD().conectar())
+                {
+                    string query = "INSERT INTO voluntario (Nome, Telefone, Cpf, Endereco, Habilidade) VALUES (@Nome, @Telefone, @Cpf, @Endereco, @Habilidade)";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conexao))
+                    {
+                        cmd.Parameters.AddWithValue("@Nome", Nome);
+                        cmd.Parameters.AddWithValue("@Telefone", Telefone);
+                        cmd.Parameters.AddWithValue("@Cpf", Cpf);
+                        cmd.Parameters.AddWithValue("@Endereco", Endereco);
+                        cmd.Parameters.AddWithValue("@Habilidade", Habilidade);
+                        int resultado = cmd.ExecuteNonQuery();
+                        return resultado > 0;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -80,12 +85,17 @@ namespace MDias.Application
         {
             try
             {
-                using MySqlConnection conexao = new conexaoBD().conectar();
-                string query = "DELETE FROM voluntario WHERE Id_Voluntario = @id";
-                MySqlCommand cmd = new MySqlCommand(query, conexao);
-                cmd.Parameters.AddWithValue("@id", id);
-                int resultado = cmd.ExecuteNonQuery();
-                return resultado > 0;
+                using (MySqlConnection conexao = new conexaoBD().conectar())
+                {
+                    string query = "DELETE FROM voluntario WHERE Id_Voluntario = @Id_Voluntario";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conexao))
+                    {
+                        cmd.Parameters.AddWithValue("@Id_Voluntario", Id_Voluntario);
+                        int resultado = cmd.ExecuteNonQuery();
+                        return resultado > 0;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -94,21 +104,27 @@ namespace MDias.Application
             }
         }
 
+
         public bool EditarVoluntario()
         {
             try
             {
-                using MySqlConnection conexao = new conexaoBD().conectar();
-                string query = "UPDATE voluntario SET nome = @nome, telefone = @telefone, cpf = @cpf, endereco = @endereco, habilidade = @habilidade WHERE Id_Voluntario = @id";
-                MySqlCommand cmd = new MySqlCommand(query, conexao);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@nome", nome);
-                cmd.Parameters.AddWithValue("@telefone", telefone);
-                cmd.Parameters.AddWithValue("@cpf", cpf);
-                cmd.Parameters.AddWithValue("@endereco", endereco);
-                cmd.Parameters.AddWithValue("@habilidade", habilidade);
-                int resultado = cmd.ExecuteNonQuery();
-                return resultado > 0;
+                using (MySqlConnection conexao = new conexaoBD().conectar())
+                {
+                    string query = "UPDATE voluntario SET Nome = @Nome, Telefone = @Telefone, Cpf = @Cpf, Endereco = @Endereco, Habilidade = @Habilidade WHERE Id_Voluntario = @Id_Voluntario";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conexao))
+                    {
+                        cmd.Parameters.AddWithValue("@Id_Voluntario", Id_Voluntario);
+                        cmd.Parameters.AddWithValue("@Nome", Nome);
+                        cmd.Parameters.AddWithValue("@Telefone", Telefone);
+                        cmd.Parameters.AddWithValue("@Cpf", Cpf);
+                        cmd.Parameters.AddWithValue("@Endereco", Endereco);
+                        cmd.Parameters.AddWithValue("@Habilidade", Habilidade);
+                        int resultado = cmd.ExecuteNonQuery();
+                        return resultado > 0;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -116,6 +132,7 @@ namespace MDias.Application
                 return false;
             }
         }
+
 
         public static DataTable ListarVoluntarios()
         {
@@ -125,10 +142,15 @@ namespace MDias.Application
             {
                 using (MySqlConnection conexaoBanco = new conexaoBD().conectar())
                 {
-                    string query = "SELECT * FROM voluntarios";
-                    MySqlCommand cmd = new MySqlCommand(query, conexaoBanco);
-                    MySqlDataAdapter adaptador = new MySqlDataAdapter(cmd);
-                    adaptador.Fill(tabela);
+                    string query = "SELECT * FROM voluntario";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conexaoBanco))
+                    {
+                        using (MySqlDataAdapter adaptador = new MySqlDataAdapter(cmd))
+                        {
+                            adaptador.Fill(tabela);
+                        }
+                    }
                 }
             }
             catch (Exception ex)
@@ -136,6 +158,7 @@ namespace MDias.Application
                 MessageBox.Show("Não foi possível listar voluntários: " + ex.Message);
                 throw;
             }
+
             return tabela;
         }
     }

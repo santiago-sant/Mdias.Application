@@ -1,5 +1,4 @@
 ﻿using MySql.Data.MySqlClient;
-using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -45,14 +44,19 @@ namespace MDias.Application
         {
             try
             {
-                using MySqlConnection conexao = new conexaoBD().conectar();
-                string query = "INSERT INTO projeto (nome, endereco, data_realizacao) VALUES (@nome, @endereco, @data_realizacao)";
-                MySqlCommand cmd = new MySqlCommand(query, conexao);
-                cmd.Parameters.AddWithValue("@nome", nome);
-                cmd.Parameters.AddWithValue("@endereco", endereco);
-                cmd.Parameters.AddWithValue("@data_realizacao", dataRealizacao);
-                int resultado = cmd.ExecuteNonQuery();
-                return resultado > 0;
+                using (MySqlConnection Conexao = new conexaoBD().conectar())
+                {
+                    string Query = "INSERT INTO projeto (Nome, Endereco, Data_Realizacao) VALUES (@Nome, @Endereco, @Data_Realizacao)";
+
+                    using (MySqlCommand Cmd = new MySqlCommand(Query, Conexao))
+                    {
+                        Cmd.Parameters.AddWithValue("@Nome", Nome);
+                        Cmd.Parameters.AddWithValue("@Endereco", Endereco);
+                        Cmd.Parameters.AddWithValue("@Data_Realizacao", Data_Realizacao);
+                        int Resultado = Cmd.ExecuteNonQuery();
+                        return Resultado > 0;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -65,12 +69,17 @@ namespace MDias.Application
         {
             try
             {
-                using MySqlConnection conexao = new conexaoBD().conectar();
-                string query = "DELETE FROM projeto WHERE id_projeto = @id";
-                MySqlCommand cmd = new MySqlCommand(query, conexao);
-                cmd.Parameters.AddWithValue("@id", id);
-                int resultado = cmd.ExecuteNonQuery();
-                return resultado > 0;
+                using (MySqlConnection Conexao = new conexaoBD().conectar())
+                {
+                    string Query = "DELETE FROM projeto WHERE Id_Projeto = @Id_Projeto";
+
+                    using (MySqlCommand cmd = new MySqlCommand(Query, Conexao))
+                    {
+                        cmd.Parameters.AddWithValue("@Id_Projeto", Id_Projeto);
+                        int Resultado = cmd.ExecuteNonQuery();
+                        return Resultado > 0;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -83,15 +92,20 @@ namespace MDias.Application
         {
             try
             {
-                using MySqlConnection conexao = new conexaoBD().conectar();
-                string query = "UPDATE projeto SET nome = @nome, endereco = @endereco, data_realizacao = @data_realizacao WHERE id_projeto = @id";
-                MySqlCommand cmd = new MySqlCommand(query, conexao);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@nome", nome);
-                cmd.Parameters.AddWithValue("@endereco", endereco);
-                cmd.Parameters.AddWithValue("@data_realizacao", dataRealizacao);
-                int resultado = cmd.ExecuteNonQuery();
-                return resultado > 0;
+                using (MySqlConnection Conexao = new conexaoBD().conectar())
+                {
+                    string Query = "UPDATE projeto SET Nome = @Nome, Endereco = @Endereco, Data_Realizacao = @Data_Realizacao WHERE Id_Projeto = @Id_Projeto";
+
+                    using (MySqlCommand cmd = new MySqlCommand(Query, Conexao))
+                    {
+                        cmd.Parameters.AddWithValue("@Id_Projeto", Id_Projeto);
+                        cmd.Parameters.AddWithValue("@Nome", Nome);
+                        cmd.Parameters.AddWithValue("@Endereco", Endereco);
+                        cmd.Parameters.AddWithValue("@Data_Realizacao", Data_Realizacao);
+                        int Resultado = cmd.ExecuteNonQuery();
+                        return Resultado > 0;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -102,16 +116,22 @@ namespace MDias.Application
 
         public static DataTable CarregarProjetosDoLider()
         {
-            DataTable tabela = new DataTable();
+            DataTable Tabela = new DataTable();
             try
             {
-                using (MySqlConnection conexaoBanco = new conexaoBD().conectar())
+                using (MySqlConnection ConexaoBanco = new conexaoBD().conectar())
                 {
-                    string listar = "SELECT * FROM projeto WHERE id_lider = @idLider";
-                    MySqlCommand comando = new MySqlCommand(listar, conexaoBanco);
-                    comando.Parameters.AddWithValue("@idLider", sessao.IdLiderLogado);
-                    MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
-                    adaptador.Fill(tabela);
+                    string Query = "SELECT * FROM projeto WHERE Id_Lider = @Id_Lider";
+
+                    using (MySqlCommand Cmd = new MySqlCommand(Query, ConexaoBanco))
+                    {
+                        Cmd.Parameters.AddWithValue("@Id_Lider", sessao.IdLogado);
+
+                        using (MySqlDataAdapter Adaptador = new MySqlDataAdapter(Cmd))
+                        {
+                            Adaptador.Fill(Tabela);
+                        }
+                    }
                 }
             }
             catch (Exception ex)
@@ -119,20 +139,25 @@ namespace MDias.Application
                 MessageBox.Show("Não foi possível carregar os projetos: " + ex.Message);
                 throw;
             }
-            return tabela;
+            return Tabela;
         }
 
         public static DataTable CarregarTodosProjetos()
         {
-            DataTable tabela = new DataTable();
+            DataTable Tabela = new DataTable();
             try
             {
-                using (MySqlConnection conexaoBanco = new conexaoBD().conectar())
+                using (MySqlConnection ConexaoBanco = new conexaoBD().conectar())
                 {
-                    string query = "SELECT * FROM projeto";
-                    MySqlCommand comando = new MySqlCommand(query, conexaoBanco);
-                    MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
-                    adaptador.Fill(tabela);
+                    string Query = "SELECT * FROM projeto";
+
+                    using (MySqlCommand Cmd = new MySqlCommand(Query, ConexaoBanco))
+                    {
+                        using (MySqlDataAdapter Adaptador = new MySqlDataAdapter(Cmd))
+                        {
+                            Adaptador.Fill(Tabela);
+                        }
+                    }
                 }
             }
             catch (Exception ex)
@@ -140,7 +165,7 @@ namespace MDias.Application
                 MessageBox.Show("Não foi possível carregar os projetos: " + ex.Message);
                 throw;
             }
-            return tabela;
+            return Tabela;
         }
     }
 }

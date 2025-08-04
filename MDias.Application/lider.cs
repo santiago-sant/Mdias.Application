@@ -1,11 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace MDias.Application
 {
@@ -84,14 +79,18 @@ namespace MDias.Application
                 using (MySqlConnection conexao = new conexaoBD().conectar())
                 {
                     string query = "INSERT INTO lider (Nome, Telefone,Endereco,Cpf, Senha) VALUES (@Nome, @Telefone, @Endereco,@Cpf, @Senha)";
-                    MySqlCommand comando = new MySqlCommand(query, conexao);
-                    comando.Parameters.AddWithValue("@Nome", Nome);
-                    comando.Parameters.AddWithValue("@Telefone", Telefone);
-                    comando.Parameters.AddWithValue("@Senha", senhaCriptografada);
-                    comando.Parameters.AddWithValue("@Endereco", Endereco);
-                    comando.Parameters.AddWithValue("@Cpf", Cpf);
-                    int resultado = comando.ExecuteNonQuery();
-                    return resultado > 0;
+
+                    using (MySqlCommand comando = new MySqlCommand(query, conexao))
+                    {
+                        comando.Parameters.AddWithValue("@Nome", Nome);
+                        comando.Parameters.AddWithValue("@Telefone", Telefone);
+                        comando.Parameters.AddWithValue("@Senha", senhaCriptografada);
+                        comando.Parameters.AddWithValue("@Endereco", Endereco);
+                        comando.Parameters.AddWithValue("@Cpf", Cpf);
+                        int resultado = comando.ExecuteNonQuery();
+                        return resultado > 0;
+                    }
+
                 }
             }
             catch (Exception ex)
@@ -101,18 +100,22 @@ namespace MDias.Application
             }
         }
 
-        public bool DesativarLider(int Id_Lider)
+        public bool DesativarLider()
         {
             try
             {
                 using (MySqlConnection conexao = new conexaoBD().conectar())
                 {
-                    string query = "UPDATE lider SET ativo = 0 WHERE id = @Id";
-                    MySqlCommand comando = new MySqlCommand(query, conexao);
-                    comando.Parameters.AddWithValue("@Id", Id_Lider);
+                    string query = "UPDATE lider SET ativo = 0 WHERE Id_Lider = @Id_Lider";
 
-                    int linhasAfetadas = comando.ExecuteNonQuery();
-                    return linhasAfetadas > 0;
+                    using (MySqlCommand comando = new MySqlCommand(query, conexao))
+                    {
+                        comando.Parameters.AddWithValue("@Id", Id_Lider);
+
+                        int linhasAfetadas = comando.ExecuteNonQuery();
+                        return linhasAfetadas > 0;
+                    }
+
                 }
             }
             catch (Exception ex)
@@ -122,18 +125,22 @@ namespace MDias.Application
             }
         }
 
-        public bool ReativarLider(int Id_Lider)
+        public bool ReativarLider()
         {
             try
             {
                 using (MySqlConnection conexao = new conexaoBD().conectar())
                 {
-                    string query = "UPDATE lider SET ativo = 1 WHERE id = @Id";
-                    MySqlCommand comando = new MySqlCommand(query, conexao);
-                    comando.Parameters.AddWithValue("@Id", Id_Lider);
+                    string query = "UPDATE lider SET ativo = 1 WHERE Id_Lider = @Id_Lider";
 
-                    int linhasAfetadas = comando.ExecuteNonQuery();
-                    return linhasAfetadas > 0;
+                    using (MySqlCommand comando = new MySqlCommand(query, conexao))
+                    {
+                        comando.Parameters.AddWithValue("@Id_Lider", Id_Lider);
+
+                        int linhasAfetadas = comando.ExecuteNonQuery();
+                        return linhasAfetadas > 0;
+                    }
+
                 }
             }
             catch (Exception ex)
@@ -150,7 +157,7 @@ namespace MDias.Application
                 string senhaCriptografada = CriptografarSenha(Senha);
                 using (MySqlConnection conexao = new conexaoBD().conectar())
                 {
-                    string query = "SELECT id FROM lider WHERE Nome=@Nome AND Senha=@Senha AND ativo=1";
+                    string query = "SELECT Id_Lider FROM lider WHERE Nome=@Nome AND Senha=@Senha AND ativo=1";
                     MySqlCommand comando = new MySqlCommand(query, conexao);
                     comando.Parameters.AddWithValue("@Nome", Nome);
                     comando.Parameters.AddWithValue("@Senha", senhaCriptografada);
@@ -167,6 +174,56 @@ namespace MDias.Application
             }
 
             return null;
+        }
+
+        public bool EditarLider()
+        {
+            try
+            {
+                string senhaCriptografada = CriptografarSenha(Senha);
+                using (MySqlConnection conexao = new conexaoBD().conectar())
+                {
+                    string query = "UPDATE lider SET Nome = @Nome, Telefone = @Telefone, Endereco = @Endereco, Cpf = @Cpf, Senha = @Senha WHERE Id_Lider = @Id_Lider";
+                    using (MySqlCommand comando = new MySqlCommand(query, conexao))
+                    {
+                        comando.Parameters.AddWithValue("@Id_Lider", Id_Lider);
+                        comando.Parameters.AddWithValue("@Nome", Nome);
+                        comando.Parameters.AddWithValue("@Telefone", Telefone);
+                        comando.Parameters.AddWithValue("@Endereco", Endereco);
+                        comando.Parameters.AddWithValue("@Cpf", Cpf);
+                        comando.Parameters.AddWithValue("@Senha", senhaCriptografada);
+                        int resultado = comando.ExecuteNonQuery();
+                        return resultado > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao editar líder: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool excluirLider()
+        {
+            try
+            {
+                using (MySqlConnection conexao = new conexaoBD().conectar())
+                {
+                    string query = "DELETE FROM lider WHERE Id_Lider = @Id_Lider";
+                    using (MySqlCommand comando = new MySqlCommand(query, conexao))
+                    {
+                        comando.Parameters.AddWithValue("@Id_Lider", Id_Lider);
+                        int resultado = comando.ExecuteNonQuery();
+                        return resultado > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao excluir líder: " + ex.Message);
+                return false;
+            }
         }
 
         public static DataTable ListarLider()

@@ -19,36 +19,34 @@ namespace MDias.Application
 
         private void hopeDatePicker1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
             TelaVoluntario telaVolutario = new TelaVoluntario();
             telaVolutario.Show();
             this.Hide();
         }
 
-        private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void editarVToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaControleVoluntario telaControleVoluntario = new TelaControleVoluntario();
             telaControleVoluntario.Show();
             this.Hide();
         }
 
-        private void editarVToolStripMenuItem_Click(object sender, EventArgs e)
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaProjeto telaProjeto = new TelaProjeto();
             telaProjeto.Show();
             this.Hide();
         }
 
-        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void editarProjetoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaControleProjeto telaControleProjeto = new TelaControleProjeto();
             telaControleProjeto.Show();
-            this.Hide();
-        }
-
-        private void editarProjetoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TelaLíder telaLider = new TelaLíder();
-            telaLider.Show();
             this.Hide();
         }
 
@@ -61,7 +59,9 @@ namespace MDias.Application
 
         private void editarLIderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            TelaControleLider telaControleLider = new TelaControleLider();
+            telaControleLider.Show();
+            this.Hide();
         }
     }
 }

@@ -16,5 +16,14 @@ namespace MDias.Application
         {
             InitializeComponent();
         }
+        private void ListarProjetos()
+        {
+           
+        }
+
+        private void dgvVoluntários_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

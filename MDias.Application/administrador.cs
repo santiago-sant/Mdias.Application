@@ -31,17 +31,24 @@ namespace MDias.Application
             set { senha = value; }
         }
 
-        public bool cadastrarAdm(string nome, string endereco, string senha, int telefone, string cpf)
+        public bool cadastrarAdm()
         {
             try
             {
-                using MySqlConnection conexao = new conexaoBD().conectar();
-                string query = "INSERT INTO Administrador (nome, senha) VALUES (@Nome, @Senha)";
-                MySqlCommand cmd = new MySqlCommand(query, conexao);
-                cmd.Parameters.AddWithValue("@nome", nome);
-                cmd.Parameters.AddWithValue("@senha", CriptografarSenha(senha));
-                int resultado = cmd.ExecuteNonQuery();
-                return resultado > 0;
+                using (MySqlConnection conexao = new conexaoBD().conectar())
+                {
+                    string query = "INSERT INTO administrador (Nome, Senha) VALUES (@Nome, @Senha)";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conexao))
+                    {
+                        cmd.Parameters.AddWithValue("@Nome", Nome);
+                        cmd.Parameters.AddWithValue("@Senha", CriptografarSenha(Senha));
+                        int resultado = cmd.ExecuteNonQuery();
+                        return resultado > 0;
+                    }
+                    
+                }
+               
             }
             catch (Exception ex)
             {
@@ -75,19 +82,25 @@ namespace MDias.Application
         {
             try
             {
-                string senhaCriptografada = CriptografarSenha(Senha);
+                
                 using (MySqlConnection conexao = new conexaoBD().conectar())
                 {
-                    string query = "SELECT * FROM Administrador WHERE Nome = @Nome AND Senha = @Senha";
-                    MySqlCommand comando = new MySqlCommand(query, conexao);
-                    comando.Parameters.AddWithValue("@Nome", Nome);
-                    comando.Parameters.AddWithValue("@Senha", senhaCriptografada);
-                    object result = comando.ExecuteScalar(); // retorna o primeiro valor encontrado
+                    string senhaCriptografada = CriptografarSenha(Senha);
 
-                    if (result != null)
+                    string query = "SELECT * FROM administrador WHERE Nome = @Nome AND Senha = @Senha";
+
+                    using (MySqlCommand comando = new MySqlCommand(query, conexao))
                     {
-                        return Convert.ToInt32(result); // login válido, retorna ID
+                        comando.Parameters.AddWithValue("@Nome", Nome);
+                        comando.Parameters.AddWithValue("@Senha", senhaCriptografada);
+                        object result = comando.ExecuteScalar(); // retorna o primeiro valor encontrado
+
+                        if (result != null)
+                        {
+                            return Convert.ToInt32(result);
+                        }
                     }
+                   
                 }
             }
             catch (Exception ex)

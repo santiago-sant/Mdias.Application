@@ -17,7 +17,7 @@
             {
                 if (!string.IsNullOrWhiteSpace(txtUsuario.Text) && !string.IsNullOrWhiteSpace(txtSenha.Text))
                 {
-                    if (txtUsuario.Text.Equals("Administrador", StringComparison.OrdinalIgnoreCase))
+                    if (txtUsuario.Text.Equals("Adm", StringComparison.OrdinalIgnoreCase))
                     {
                         administrador adm = new administrador
                         {
