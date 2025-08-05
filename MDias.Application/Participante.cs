@@ -17,13 +17,14 @@ namespace MDias.Application
             get { return idVoluntario; }
             set { idVoluntario = value; }
         }
+
         public int Id_Projeto
         {
             get { return idProjeto; }
             set { idProjeto = value; }
         }
 
-        private bool SalvarParticipante(int idVoluntario, int idProjeto)
+        public static bool SalvarParticipante(int idVoluntario, int idProjeto)
         {
             try
             {
@@ -37,7 +38,6 @@ namespace MDias.Application
                         int resultado = cmd.ExecuteNonQuery();
                         return resultado > 0;
                     }
-
                 }
             }
             catch (Exception ex)
@@ -46,8 +46,5 @@ namespace MDias.Application
                 return false;
             }
         }
-                
-                
-        
     }
 }

@@ -46,13 +46,14 @@ namespace MDias.Application
             {
                 using (MySqlConnection Conexao = new conexaoBD().conectar())
                 {
-                    string Query = "INSERT INTO projeto (Nome, Endereco, Data_Realizacao) VALUES (@Nome, @Endereco, @Data_Realizacao)";
+                    string Query = "INSERT INTO projeto (Nome, Endereco, Data_Realizacao,Id_Lider) VALUES (@Nome, @Endereco, @Data_Realizacao,@Id_Lider)";
 
                     using (MySqlCommand Cmd = new MySqlCommand(Query, Conexao))
                     {
                         Cmd.Parameters.AddWithValue("@Nome", Nome);
                         Cmd.Parameters.AddWithValue("@Endereco", Endereco);
                         Cmd.Parameters.AddWithValue("@Data_Realizacao", Data_Realizacao);
+                        Cmd.Parameters.AddWithValue("@Id_Lider", sessao.IdLogado);
                         int Resultado = Cmd.ExecuteNonQuery();
                         return Resultado > 0;
                     }

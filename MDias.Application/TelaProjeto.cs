@@ -19,7 +19,6 @@ namespace MDias.Application
 
         private void hopeDatePicker1_Click(object sender, EventArgs e)
         {
-            
         }
 
         private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -62,6 +61,37 @@ namespace MDias.Application
             TelaControleLider telaControleLider = new TelaControleLider();
             telaControleLider.Show();
             this.Hide();
+        }
+
+        private void btnCadastrarVoluntarios_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtNome.Text) || string.IsNullOrEmpty(txtEndereco.Text))
+                {
+                    MessageBox.Show("Preencha todos os campos corretamente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                projeto projeto = new projeto();
+                projeto.Nome = txtNome.Text;
+                projeto.Endereco = txtEndereco.Text;
+                projeto.Data_Realizacao = dtpData.Value;
+
+                if (projeto.CadastrarProjeto())
+                {
+                    MessageBox.Show("Projeto cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtNome.Clear();
+                    txtEndereco.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao cadastrar o projeto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro inesperado: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

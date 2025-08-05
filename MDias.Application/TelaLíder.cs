@@ -21,5 +21,41 @@ namespace MDias.Application
         {
 
         }
+
+        private void btnCadastrarVoluntarios_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtNome.Text) || string.IsNullOrEmpty(txtCPF.Text) || string.IsNullOrEmpty(txtSenha.Text) || string.IsNullOrEmpty(txtEndereco.Text) || string.IsNullOrEmpty(txtTelefone.Text))
+                {
+                    MessageBox.Show("Por favor, preencha todos os campos.");
+                    return;
+                }
+                lider lider = new lider();
+                lider.Nome = txtNome.Text;
+                lider.Cpf = txtCPF.Text;
+                lider.Senha = txtSenha.Text;
+                lider.Endereco = txtEndereco.Text;
+                lider.Telefone = txtTelefone.Text;
+
+                if (lider.cadastrarLider())
+                {
+                    MessageBox.Show("Líder cadastrado com sucesso!");
+                    txtNome.Clear();
+                    txtCPF.Clear();
+                    txtSenha.Clear();
+                    txtEndereco.Clear();
+                    txtTelefone.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao cadastrar líder. Tente novamente.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro: " + ex.Message);
+            }
+        }
     }
 }

@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaProjeto));
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
-            guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            btnCadastrarVoluntarios = new ReaLTaiizor.Controls.SpaceButton();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
+            dtpData = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            btnCadastrar = new ReaLTaiizor.Controls.SpaceButton();
+            txtEndereco = new Guna.UI2.WinForms.Guna2TextBox();
+            txtNome = new Guna.UI2.WinForms.Guna2TextBox();
             crownToolStrip1 = new ReaLTaiizor.Controls.CrownToolStrip();
             toolStripDropDownButton3 = new ToolStripDropDownButton();
             cadastrarToolStripMenuItem1 = new ToolStripMenuItem();
@@ -60,10 +60,10 @@
             // formTheme1
             // 
             formTheme1.BackColor = Color.FromArgb(32, 41, 50);
-            formTheme1.Controls.Add(guna2DateTimePicker1);
-            formTheme1.Controls.Add(btnCadastrarVoluntarios);
-            formTheme1.Controls.Add(guna2TextBox1);
-            formTheme1.Controls.Add(txtUsuario);
+            formTheme1.Controls.Add(dtpData);
+            formTheme1.Controls.Add(btnCadastrar);
+            formTheme1.Controls.Add(txtEndereco);
+            formTheme1.Controls.Add(txtNome);
             formTheme1.Controls.Add(crownToolStrip1);
             formTheme1.Controls.Add(thunderControlBox1);
             formTheme1.Dock = DockStyle.Fill;
@@ -79,82 +79,82 @@
             formTheme1.StartPosition = FormStartPosition.WindowsDefaultLocation;
             formTheme1.TabIndex = 3;
             // 
-            // guna2DateTimePicker1
+            // dtpData
             // 
-            guna2DateTimePicker1.BorderRadius = 4;
-            guna2DateTimePicker1.Checked = true;
-            guna2DateTimePicker1.CustomizableEdges = customizableEdges25;
-            guna2DateTimePicker1.FillColor = Color.White;
-            guna2DateTimePicker1.Font = new Font("Segoe UI", 9F);
-            guna2DateTimePicker1.Format = DateTimePickerFormat.Long;
-            guna2DateTimePicker1.Location = new Point(367, 77);
-            guna2DateTimePicker1.Margin = new Padding(3, 2, 3, 2);
-            guna2DateTimePicker1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            guna2DateTimePicker1.Size = new Size(285, 24);
-            guna2DateTimePicker1.TabIndex = 29;
-            guna2DateTimePicker1.Value = new DateTime(2025, 7, 25, 16, 23, 22, 604);
+            dtpData.BorderRadius = 4;
+            dtpData.Checked = true;
+            dtpData.CustomizableEdges = customizableEdges7;
+            dtpData.FillColor = Color.White;
+            dtpData.Font = new Font("Segoe UI", 9F);
+            dtpData.Format = DateTimePickerFormat.Long;
+            dtpData.Location = new Point(367, 77);
+            dtpData.Margin = new Padding(3, 2, 3, 2);
+            dtpData.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            dtpData.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            dtpData.Name = "dtpData";
+            dtpData.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            dtpData.Size = new Size(285, 24);
+            dtpData.TabIndex = 29;
+            dtpData.Value = new DateTime(2025, 7, 25, 16, 23, 22, 604);
             // 
-            // btnCadastrarVoluntarios
+            // btnCadastrar
             // 
-            btnCadastrarVoluntarios.Customization = "Kioq/zIyMv8yMjL/Kioq/y8vL/8nJyf//v7+/yMjI/8qKir/";
-            btnCadastrarVoluntarios.Font = new Font("Verdana", 8F);
-            btnCadastrarVoluntarios.Image = null;
-            btnCadastrarVoluntarios.Location = new Point(19, 249);
-            btnCadastrarVoluntarios.Name = "btnCadastrarVoluntarios";
-            btnCadastrarVoluntarios.NoRounding = false;
-            btnCadastrarVoluntarios.Size = new Size(120, 40);
-            btnCadastrarVoluntarios.TabIndex = 27;
-            btnCadastrarVoluntarios.Text = "Cadastrar";
-            btnCadastrarVoluntarios.TextAlignment = HorizontalAlignment.Center;
-            btnCadastrarVoluntarios.Transparent = false;
-            btnCadastrarVoluntarios.Visible = false;
+            btnCadastrar.Customization = "Kioq/zIyMv8yMjL/Kioq/y8vL/8nJyf//v7+/yMjI/8qKir/";
+            btnCadastrar.Font = new Font("Verdana", 8F);
+            btnCadastrar.Image = null;
+            btnCadastrar.Location = new Point(19, 249);
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.NoRounding = false;
+            btnCadastrar.Size = new Size(120, 40);
+            btnCadastrar.TabIndex = 27;
+            btnCadastrar.Text = "Cadastrar";
+            btnCadastrar.TextAlignment = HorizontalAlignment.Center;
+            btnCadastrar.Transparent = false;
+            btnCadastrar.Click += btnCadastrarVoluntarios_Click;
             // 
-            // guna2TextBox1
+            // txtEndereco
             // 
-            guna2TextBox1.BorderRadius = 4;
-            guna2TextBox1.CustomizableEdges = customizableEdges27;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FillColor = Color.FromArgb(224, 224, 224);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(19, 136);
-            guna2TextBox1.Margin = new Padding(4, 4, 4, 4);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PlaceholderText = "Endereço";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            guna2TextBox1.Size = new Size(285, 23);
-            guna2TextBox1.TabIndex = 10;
+            txtEndereco.BorderRadius = 4;
+            txtEndereco.CustomizableEdges = customizableEdges9;
+            txtEndereco.DefaultText = "";
+            txtEndereco.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtEndereco.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtEndereco.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtEndereco.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtEndereco.FillColor = Color.FromArgb(224, 224, 224);
+            txtEndereco.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtEndereco.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtEndereco.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtEndereco.Location = new Point(19, 136);
+            txtEndereco.Margin = new Padding(4);
+            txtEndereco.Name = "txtEndereco";
+            txtEndereco.PlaceholderText = "Endereço";
+            txtEndereco.SelectedText = "";
+            txtEndereco.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtEndereco.Size = new Size(285, 23);
+            txtEndereco.TabIndex = 10;
             // 
-            // txtUsuario
+            // txtNome
             // 
-            txtUsuario.BorderRadius = 4;
-            txtUsuario.CustomizableEdges = customizableEdges29;
-            txtUsuario.DefaultText = "";
-            txtUsuario.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtUsuario.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtUsuario.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtUsuario.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtUsuario.FillColor = Color.FromArgb(224, 224, 224);
-            txtUsuario.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUsuario.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsuario.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUsuario.Location = new Point(19, 78);
-            txtUsuario.Margin = new Padding(4, 4, 4, 4);
-            txtUsuario.Name = "txtUsuario";
-            txtUsuario.PlaceholderText = "Nome";
-            txtUsuario.SelectedText = "";
-            txtUsuario.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            txtUsuario.Size = new Size(285, 23);
-            txtUsuario.TabIndex = 6;
+            txtNome.BorderRadius = 4;
+            txtNome.CustomizableEdges = customizableEdges11;
+            txtNome.DefaultText = "";
+            txtNome.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtNome.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtNome.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtNome.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtNome.FillColor = Color.FromArgb(224, 224, 224);
+            txtNome.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtNome.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNome.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtNome.Location = new Point(19, 78);
+            txtNome.Margin = new Padding(4);
+            txtNome.Name = "txtNome";
+            txtNome.PlaceholderText = "Nome";
+            txtNome.SelectedText = "";
+            txtNome.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtNome.Size = new Size(285, 23);
+            txtNome.TabIndex = 6;
             // 
             // crownToolStrip1
             // 
@@ -187,7 +187,7 @@
             cadastrarToolStripMenuItem1.BackColor = Color.FromArgb(60, 63, 65);
             cadastrarToolStripMenuItem1.ForeColor = Color.FromArgb(220, 220, 220);
             cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            cadastrarToolStripMenuItem1.Size = new Size(180, 22);
+            cadastrarToolStripMenuItem1.Size = new Size(161, 22);
             cadastrarToolStripMenuItem1.Text = "Cadastrar";
             cadastrarToolStripMenuItem1.Click += cadastrarToolStripMenuItem1_Click;
             // 
@@ -196,7 +196,7 @@
             editarVToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarVToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarVToolStripMenuItem.Name = "editarVToolStripMenuItem";
-            editarVToolStripMenuItem.Size = new Size(180, 22);
+            editarVToolStripMenuItem.Size = new Size(161, 22);
             editarVToolStripMenuItem.Text = "Editar Voluntário";
             editarVToolStripMenuItem.Click += editarVToolStripMenuItem_Click;
             // 
@@ -225,7 +225,7 @@
             cadastrarToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cadastrarToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            cadastrarToolStripMenuItem.Size = new Size(180, 22);
+            cadastrarToolStripMenuItem.Size = new Size(145, 22);
             cadastrarToolStripMenuItem.Text = "Cadastrar";
             cadastrarToolStripMenuItem.Click += cadastrarToolStripMenuItem_Click;
             // 
@@ -234,7 +234,7 @@
             editarProjetoToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarProjetoToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarProjetoToolStripMenuItem.Name = "editarProjetoToolStripMenuItem";
-            editarProjetoToolStripMenuItem.Size = new Size(180, 22);
+            editarProjetoToolStripMenuItem.Size = new Size(145, 22);
             editarProjetoToolStripMenuItem.Text = "Editar Projeto";
             editarProjetoToolStripMenuItem.Click += editarProjetoToolStripMenuItem_Click;
             // 
@@ -263,7 +263,7 @@
             cadastroToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cadastroToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(180, 22);
+            cadastroToolStripMenuItem.Size = new Size(133, 22);
             cadastroToolStripMenuItem.Text = "Cadastro";
             cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
@@ -272,7 +272,7 @@
             editarLIderToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarLIderToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarLIderToolStripMenuItem.Name = "editarLIderToolStripMenuItem";
-            editarLIderToolStripMenuItem.Size = new Size(180, 22);
+            editarLIderToolStripMenuItem.Size = new Size(133, 22);
             editarLIderToolStripMenuItem.Text = "Editar LIder";
             editarLIderToolStripMenuItem.Click += editarLIderToolStripMenuItem_Click;
             // 
@@ -282,7 +282,7 @@
             thunderControlBox1.BackColor = Color.Transparent;
             thunderControlBox1.DefaultLocation = true;
             thunderControlBox1.ForeColor = Color.White;
-            thunderControlBox1.Location = new Point(634, 2);
+            thunderControlBox1.Location = new Point(633, 3);
             thunderControlBox1.Margin = new Padding(3, 2, 3, 2);
             thunderControlBox1.Name = "thunderControlBox1";
             thunderControlBox1.Size = new Size(64, 18);
@@ -309,9 +309,9 @@
         #endregion
 
         private ReaLTaiizor.Forms.FormTheme formTheme1;
-        private ReaLTaiizor.Controls.SpaceButton btnCadastrarVoluntarios;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox txtUsuario;
+        private ReaLTaiizor.Controls.SpaceButton btnCadastrar;
+        private Guna.UI2.WinForms.Guna2TextBox txtEndereco;
+        private Guna.UI2.WinForms.Guna2TextBox txtNome;
         private ReaLTaiizor.Controls.CrownToolStrip crownToolStrip1;
         private ToolStripDropDownButton toolStripDropDownButton3;
         private ToolStripMenuItem cadastrarToolStripMenuItem1;
@@ -325,6 +325,6 @@
         private ToolStripMenuItem cadastroToolStripMenuItem;
         private ToolStripMenuItem editarLIderToolStripMenuItem;
         private ReaLTaiizor.Controls.ThunderControlBox thunderControlBox1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpData;
     }
 }

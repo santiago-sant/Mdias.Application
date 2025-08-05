@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,12 +15,71 @@ namespace MDias.Application
 {
     public partial class TelaControleVoluntario : Form
     {
-        
-
         public TelaControleVoluntario()
         {
             InitializeComponent();
-          
+        }
+
+        private void CarregarVoluntariosComProjetos()
+        {
+            try
+            {
+                DataTable voluntarios = voluntario.ListarVoluntarios();
+                DataTable projetos = projeto.CarregarProjetosDoLider();
+
+                dgvVoluntario.Columns.Clear();
+                dgvVoluntario.DataSource = null;
+                dgvVoluntario.AutoGenerateColumns = false;
+
+                // Colunas fixas
+                dgvVoluntario.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Id_Voluntario",
+                    HeaderText = "ID",
+                    Name = "Id_Voluntario"
+                });
+
+                dgvVoluntario.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Nome",
+                    HeaderText = "Nome",
+                    Name = "Nome"
+                });
+
+                dgvVoluntario.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Cpf",
+                    HeaderText = "CPF",
+                    Name = "Cpf"
+                });
+
+                dgvVoluntario.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Habilidade",
+                    HeaderText = "Habilidade",
+                    Name = "Habilidade"
+                });
+
+                // Coluna ComboBox com os projetos
+                DataGridViewComboBoxColumn comboProjetos = new DataGridViewComboBoxColumn()
+                {
+                    HeaderText = "Projeto",
+                    Name = "Projeto",
+                    DataSource = projetos,
+                    DisplayMember = "Nome",
+                    ValueMember = "Id_Projeto",
+                    FlatStyle = FlatStyle.Flat
+                };
+
+                dgvVoluntario.Columns.Add(comboProjetos);
+
+                // Definir fonte de dados
+                dgvVoluntario.DataSource = voluntarios;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar dados: " + ex.Message);
+            }
         }
 
         private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -35,7 +95,7 @@ namespace MDias.Application
             telaControleVoluntario.Show();
             this.Close();
         }
-            
+
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaProjeto telaProjeto = new TelaProjeto();
@@ -66,22 +126,35 @@ namespace MDias.Application
 
         private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                // Obtém a linha clicada
-                DataGridViewRow row = dgvVoluntario.Rows[e.RowIndex];
-
-                // Acessa os dados das células e verifica se não são nulos antes de atribuir
-                txtID.HeaderText = row.Cells["id_voluntario"].Value?.ToString() ?? string.Empty;  // ID do voluntário
-                txtNome.HeaderText = row.Cells["Nome"].Value?.ToString() ?? string.Empty;  // Nome do voluntário
-                txtTelefone.HeaderText = row.Cells["Telefone"].Value?.ToString() ?? string.Empty;  // Telefone do voluntário
-                txtCpf.HeaderText = row.Cells["CPF"].Value?.ToString() ?? string.Empty;  // Cpf do voluntário
-                txtEndereco.HeaderText = row.Cells["Endereço"].Value?.ToString() ?? string.Empty;  // Endereço do voluntário
-                txtHabilidade.HeaderText = row.Cells["Habilidades"].Value?.ToString() ?? string.Empty;  // Habilidade do voluntário
-                txtProjeto.HeaderText = row.Cells["Projetos"].Value?.ToString() ?? string.Empty;  // Relaciona Projeto com o voluntário
-            }
         }
 
+        private void formTheme1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void TelaControleVoluntario_Load(object sender, EventArgs e)
+        {
+            CarregarVoluntariosComProjetos();
+        }
+
+        private void dgvVoluntario_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && dgvVoluntario.Columns[e.ColumnIndex].Name == "Projeto")
+            {
+                int idVoluntario = Convert.ToInt32(dgvVoluntario.Rows[e.RowIndex].Cells["Id_Voluntario"].Value);
+                object projetoSelecionado = dgvVoluntario.Rows[e.RowIndex].Cells["Projeto"].Value;
+
+                if (projetoSelecionado != null)
+                {
+                    int idProjeto = Convert.ToInt32(projetoSelecionado);
+
+                    bool sucesso = Participante.SalvarParticipante(idVoluntario, idProjeto); // exemplo de classe
+                    if (sucesso)
+                        MessageBox.Show("Voluntário associado com sucesso!");
+                    else
+                        MessageBox.Show("Não foi possível associar (já existe ou ocorreu erro).");
+                }
+            }
+        }
     }
-    
 }
