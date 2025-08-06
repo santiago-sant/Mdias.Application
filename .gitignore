@@ -1,0 +1,69 @@
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+*.pdb
+
+# Build
+bin/
+obj/
+[Bb]uild/
+[Bb]uild[Ll]og.*
+
+# Auto-generated
+*.Designer.cs
+*.g.cs
+*.g.i.cs
+
+# Temporary
+*.tmp
+*.bak
+*.log
+
+# Compiled DLLs and EXEs
+*.dll
+*.exe
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+packages/
+*.symbols.nupkg
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Rider/JetBrains
+.idea/
+*.sln.iml
+
+# Others
+*.dbmdl
+*.publish.xml
+
+# ASP.NET
+App_Data/
+*.db
+
+# Ignore configuration transforms
+*.Release.config
+*.Debug.config
+
+# Ignore user secrets
+secrets.json
+
+# Windows Forms designer backups
+*.resx~
+
+# Ignore test results
+TestResults/
+*.coverage
+*.coveragexml
