@@ -33,7 +33,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
-            kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
+            dtgLider = new Krypton.Toolkit.KryptonDataGridView();
             crownToolStrip1 = new ReaLTaiizor.Controls.CrownToolStrip();
             toolStripDropDownButton3 = new ToolStripDropDownButton();
             cadastrarToolStripMenuItem1 = new ToolStripMenuItem();
@@ -48,7 +48,7 @@
             editarLIderToolStripMenuItem = new ToolStripMenuItem();
             thunderControlBox1 = new ReaLTaiizor.Controls.ThunderControlBox();
             formTheme1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)kryptonDataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgLider).BeginInit();
             crownToolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             // 
             formTheme1.BackColor = Color.FromArgb(32, 41, 50);
             formTheme1.Controls.Add(txtUsuario);
-            formTheme1.Controls.Add(kryptonDataGridView1);
+            formTheme1.Controls.Add(dtgLider);
             formTheme1.Controls.Add(crownToolStrip1);
             formTheme1.Controls.Add(thunderControlBox1);
             formTheme1.Dock = DockStyle.Fill;
@@ -69,7 +69,7 @@
             formTheme1.Sizable = true;
             formTheme1.Size = new Size(700, 338);
             formTheme1.SmartBounds = false;
-            formTheme1.StartPosition = FormStartPosition.WindowsDefaultLocation;
+            formTheme1.StartPosition = FormStartPosition.CenterScreen;
             formTheme1.TabIndex = 4;
             // 
             // txtUsuario
@@ -87,7 +87,7 @@
             txtUsuario.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtUsuario.IconLeft = (Image)resources.GetObject("txtUsuario.IconLeft");
             txtUsuario.Location = new Point(18, 60);
-            txtUsuario.Margin = new Padding(4, 4, 4, 4);
+            txtUsuario.Margin = new Padding(4);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.PlaceholderText = "Nome";
             txtUsuario.SelectedText = "";
@@ -95,16 +95,16 @@
             txtUsuario.Size = new Size(480, 23);
             txtUsuario.TabIndex = 7;
             // 
-            // kryptonDataGridView1
+            // dtgLider
             // 
-            kryptonDataGridView1.BorderStyle = BorderStyle.None;
-            kryptonDataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            kryptonDataGridView1.Location = new Point(10, 106);
-            kryptonDataGridView1.Margin = new Padding(3, 2, 3, 2);
-            kryptonDataGridView1.Name = "kryptonDataGridView1";
-            kryptonDataGridView1.RowHeadersWidth = 51;
-            kryptonDataGridView1.Size = new Size(679, 208);
-            kryptonDataGridView1.TabIndex = 2;
+            dtgLider.BorderStyle = BorderStyle.None;
+            dtgLider.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgLider.Location = new Point(10, 106);
+            dtgLider.Margin = new Padding(3, 2, 3, 2);
+            dtgLider.Name = "dtgLider";
+            dtgLider.RowHeadersWidth = 51;
+            dtgLider.Size = new Size(679, 208);
+            dtgLider.TabIndex = 2;
             // 
             // crownToolStrip1
             // 
@@ -139,6 +139,7 @@
             cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
             cadastrarToolStripMenuItem1.Size = new Size(161, 22);
             cadastrarToolStripMenuItem1.Text = "Cadastrar";
+            cadastrarToolStripMenuItem1.Click += cadastrarToolStripMenuItem1_Click;
             // 
             // editarVToolStripMenuItem
             // 
@@ -147,6 +148,7 @@
             editarVToolStripMenuItem.Name = "editarVToolStripMenuItem";
             editarVToolStripMenuItem.Size = new Size(161, 22);
             editarVToolStripMenuItem.Text = "Editar Voluntário";
+            editarVToolStripMenuItem.Click += editarVToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
@@ -175,6 +177,7 @@
             cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
             cadastrarToolStripMenuItem.Size = new Size(145, 22);
             cadastrarToolStripMenuItem.Text = "Cadastrar";
+            cadastrarToolStripMenuItem.Click += cadastrarToolStripMenuItem_Click;
             // 
             // editarProjetoToolStripMenuItem
             // 
@@ -183,6 +186,7 @@
             editarProjetoToolStripMenuItem.Name = "editarProjetoToolStripMenuItem";
             editarProjetoToolStripMenuItem.Size = new Size(145, 22);
             editarProjetoToolStripMenuItem.Text = "Editar Projeto";
+            editarProjetoToolStripMenuItem.Click += editarProjetoToolStripMenuItem_Click;
             // 
             // toolStripSeparator2
             // 
@@ -211,6 +215,7 @@
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             cadastroToolStripMenuItem.Size = new Size(133, 22);
             cadastroToolStripMenuItem.Text = "Cadastro";
+            cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
             // editarLIderToolStripMenuItem
             // 
@@ -219,6 +224,7 @@
             editarLIderToolStripMenuItem.Name = "editarLIderToolStripMenuItem";
             editarLIderToolStripMenuItem.Size = new Size(133, 22);
             editarLIderToolStripMenuItem.Text = "Editar LIder";
+            editarLIderToolStripMenuItem.Click += editarLIderToolStripMenuItem_Click;
             // 
             // thunderControlBox1
             // 
@@ -226,7 +232,7 @@
             thunderControlBox1.BackColor = Color.Transparent;
             thunderControlBox1.DefaultLocation = true;
             thunderControlBox1.ForeColor = Color.White;
-            thunderControlBox1.Location = new Point(634, 2);
+            thunderControlBox1.Location = new Point(633, 3);
             thunderControlBox1.Margin = new Padding(3, 2, 3, 2);
             thunderControlBox1.Name = "thunderControlBox1";
             thunderControlBox1.Size = new Size(64, 18);
@@ -243,9 +249,11 @@
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(110, 38);
             Name = "TelaControleLider";
+            StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
+            Load += TelaControleLider_Load;
             formTheme1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)kryptonDataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgLider).EndInit();
             crownToolStrip1.ResumeLayout(false);
             crownToolStrip1.PerformLayout();
             ResumeLayout(false);
@@ -255,7 +263,7 @@
 
         private ReaLTaiizor.Forms.FormTheme formTheme1;
         private Guna.UI2.WinForms.Guna2TextBox txtUsuario;
-        private Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
+        private Krypton.Toolkit.KryptonDataGridView dtgLider;
         private ReaLTaiizor.Controls.CrownToolStrip crownToolStrip1;
         private ToolStripDropDownButton toolStripDropDownButton3;
         private ToolStripMenuItem cadastrarToolStripMenuItem1;

@@ -60,6 +60,20 @@ namespace MDias.Application
                     Name = "Habilidade"
                 });
 
+                dgvVoluntario.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Telefone",
+                    HeaderText = "Telefone",
+                    Name = "Telefone"
+                });
+
+                dgvVoluntario.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Endereco",
+                    HeaderText = "Endereço",
+                    Name = "Endereco"
+                });
+
                 // Coluna ComboBox com os projetos
                 DataGridViewComboBoxColumn comboProjetos = new DataGridViewComboBoxColumn()
                 {
@@ -72,6 +86,26 @@ namespace MDias.Application
                 };
 
                 dgvVoluntario.Columns.Add(comboProjetos);
+
+                // Adicionar evento para exclusão
+                DataGridViewButtonColumn excluirColuna = new DataGridViewButtonColumn()
+                {
+                    HeaderText = "Excluir",
+                    Text = "Excluir",
+                    UseColumnTextForButtonValue = true,
+                    Name = "Excluir"
+                };
+                dgvVoluntario.Columns.Add(excluirColuna);
+
+                // Adicioonar evento para edição
+                DataGridViewButtonColumn editarColuna = new DataGridViewButtonColumn()
+                {
+                    HeaderText = "Editar",
+                    Text = "Editar",
+                    UseColumnTextForButtonValue = true,
+                    Name = "Editar"
+                };
+                dgvVoluntario.Columns.Add(editarColuna);
 
                 // Definir fonte de dados
                 dgvVoluntario.DataSource = voluntarios;
@@ -124,9 +158,7 @@ namespace MDias.Application
             this.Close();
         }
 
-        private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
+
 
         private void formTheme1_Click(object sender, EventArgs e)
         {
@@ -154,6 +186,83 @@ namespace MDias.Application
                     else
                         MessageBox.Show("Não foi possível associar (já existe ou ocorreu erro).");
                 }
+            }
+        }
+
+        private void dgvVoluntario_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verifica se clicou em uma célula de botão e em uma linha válida
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                string columnName = dgvVoluntario.Columns[e.ColumnIndex].Name;
+
+                // ID do voluntário
+                int idVoluntario = Convert.ToInt32(dgvVoluntario.Rows[e.RowIndex].Cells["Id_Voluntario"].Value);
+
+                // === Botão EXCLUIR ===
+                if (columnName == "Excluir")
+                {
+                    DialogResult result = MessageBox.Show("Deseja realmente excluir este voluntário?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        voluntario Voluntario = new voluntario();
+                        Voluntario.Id_Voluntario = idVoluntario;
+
+                        bool sucesso = Voluntario.ExcluirVoluntario();
+                        if (sucesso)
+                        {
+                            MessageBox.Show("Voluntário excluído com sucesso!");
+                            CarregarVoluntariosComProjetos();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro ao excluir voluntário.");
+                        }
+                    }
+                }
+
+                // === Botão EDITAR ===
+                else if (columnName == "Editar")
+                {
+                    try
+                    {
+                        // Lê os valores da linha atualizada
+                        string nome = dgvVoluntario.Rows[e.RowIndex].Cells["Nome"].Value?.ToString();
+                        string cpf = dgvVoluntario.Rows[e.RowIndex].Cells["Cpf"].Value?.ToString();
+                        string habilidade = dgvVoluntario.Rows[e.RowIndex].Cells["Habilidade"].Value?.ToString();
+                        string telefone = dgvVoluntario.Rows[e.RowIndex].Cells["Telefone"].Value?.ToString();
+                        string endereco = dgvVoluntario.Rows[e.RowIndex].Cells["Endereco"].Value?.ToString();
+
+
+                        // Monta o objeto Voluntario
+                        voluntario Voluntario = new voluntario();
+                        Voluntario.Id_Voluntario = idVoluntario;
+                        Voluntario.Nome = nome;
+                        Voluntario.Cpf = cpf;
+                        Voluntario.Habilidade = habilidade;
+                        Voluntario.Telefone = telefone;
+                        Voluntario.Endereco = endereco;
+
+                        // Atualiza no banco
+                        bool sucesso = Voluntario.EditarVoluntario();
+
+                        if (sucesso)
+                        {
+                            MessageBox.Show("Voluntário atualizado com sucesso!");
+                            CarregarVoluntariosComProjetos(); // Recarrega a grid
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro ao atualizar voluntário.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro na edição: " + ex.Message);
+                    }
+                }
+
             }
         }
     }

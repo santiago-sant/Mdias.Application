@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaControleVoluntario));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             txtBusca = new Guna.UI2.WinForms.Guna2TextBox();
             dgvVoluntario = new Krypton.Toolkit.KryptonDataGridView();
@@ -69,14 +69,14 @@
             formTheme1.Sizable = true;
             formTheme1.Size = new Size(700, 338);
             formTheme1.SmartBounds = false;
-            formTheme1.StartPosition = FormStartPosition.WindowsDefaultLocation;
+            formTheme1.StartPosition = FormStartPosition.CenterScreen;
             formTheme1.TabIndex = 3;
             formTheme1.Click += formTheme1_Click;
             // 
             // txtBusca
             // 
             txtBusca.BorderRadius = 4;
-            txtBusca.CustomizableEdges = customizableEdges1;
+            txtBusca.CustomizableEdges = customizableEdges3;
             txtBusca.DefaultText = "";
             txtBusca.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtBusca.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -92,14 +92,17 @@
             txtBusca.Name = "txtBusca";
             txtBusca.PlaceholderText = "Nome";
             txtBusca.SelectedText = "";
-            txtBusca.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtBusca.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtBusca.Size = new Size(480, 23);
             txtBusca.TabIndex = 7;
             // 
             // dgvVoluntario
             // 
+            dgvVoluntario.AllowUserToAddRows = false;
+            dgvVoluntario.AllowUserToDeleteRows = false;
             dgvVoluntario.AllowUserToOrderColumns = true;
-            dgvVoluntario.BorderStyle = BorderStyle.None;
+            dgvVoluntario.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvVoluntario.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dgvVoluntario.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvVoluntario.Location = new Point(10, 105);
             dgvVoluntario.Margin = new Padding(3, 2, 3, 2);
@@ -107,7 +110,7 @@
             dgvVoluntario.RowHeadersWidth = 51;
             dgvVoluntario.Size = new Size(679, 208);
             dgvVoluntario.TabIndex = 2;
-            dgvVoluntario.CellContentClick += kryptonDataGridView1_CellContentClick;
+            dgvVoluntario.CellClick += dgvVoluntario_CellClick;
             dgvVoluntario.CellValueChanged += dgvVoluntario_CellValueChanged;
             // 
             // crownToolStrip1
@@ -253,6 +256,7 @@
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(110, 38);
             Name = "TelaControleVoluntario";
+            StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
             Load += TelaControleVoluntario_Load;
             formTheme1.ResumeLayout(false);

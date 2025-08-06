@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLíder));
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -92,7 +92,7 @@
             formTheme1.Sizable = true;
             formTheme1.Size = new Size(700, 338);
             formTheme1.SmartBounds = false;
-            formTheme1.StartPosition = FormStartPosition.WindowsDefaultLocation;
+            formTheme1.StartPosition = FormStartPosition.CenterScreen;
             formTheme1.TabIndex = 3;
             formTheme1.Click += formTheme1_Click;
             // 
@@ -151,12 +151,12 @@
             btnCadastrar.Text = "Cadastrar";
             btnCadastrar.TextAlignment = HorizontalAlignment.Center;
             btnCadastrar.Transparent = false;
-            btnCadastrar.Click += btnCadastrarVoluntarios_Click;
+            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // txtSenha
             // 
             txtSenha.BorderRadius = 4;
-            txtSenha.CustomizableEdges = customizableEdges11;
+            txtSenha.CustomizableEdges = customizableEdges1;
             txtSenha.DefaultText = "";
             txtSenha.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtSenha.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -171,14 +171,14 @@
             txtSenha.Name = "txtSenha";
             txtSenha.PlaceholderText = "Senha ";
             txtSenha.SelectedText = "";
-            txtSenha.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtSenha.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtSenha.Size = new Size(285, 23);
             txtSenha.TabIndex = 13;
             // 
             // txtCPF
             // 
             txtCPF.BorderRadius = 4;
-            txtCPF.CustomizableEdges = customizableEdges13;
+            txtCPF.CustomizableEdges = customizableEdges3;
             txtCPF.DefaultText = "";
             txtCPF.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtCPF.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -193,14 +193,14 @@
             txtCPF.Name = "txtCPF";
             txtCPF.PlaceholderText = "CPF";
             txtCPF.SelectedText = "";
-            txtCPF.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtCPF.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtCPF.Size = new Size(285, 23);
             txtCPF.TabIndex = 12;
             // 
             // txtTelefone
             // 
             txtTelefone.BorderRadius = 4;
-            txtTelefone.CustomizableEdges = customizableEdges15;
+            txtTelefone.CustomizableEdges = customizableEdges5;
             txtTelefone.DefaultText = "";
             txtTelefone.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTelefone.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -215,14 +215,14 @@
             txtTelefone.Name = "txtTelefone";
             txtTelefone.PlaceholderText = "Telefone ";
             txtTelefone.SelectedText = "";
-            txtTelefone.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            txtTelefone.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtTelefone.Size = new Size(285, 23);
             txtTelefone.TabIndex = 11;
             // 
             // txtEndereco
             // 
             txtEndereco.BorderRadius = 4;
-            txtEndereco.CustomizableEdges = customizableEdges17;
+            txtEndereco.CustomizableEdges = customizableEdges7;
             txtEndereco.DefaultText = "";
             txtEndereco.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtEndereco.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -237,14 +237,14 @@
             txtEndereco.Name = "txtEndereco";
             txtEndereco.PlaceholderText = "Endereço";
             txtEndereco.SelectedText = "";
-            txtEndereco.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtEndereco.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtEndereco.Size = new Size(285, 23);
             txtEndereco.TabIndex = 10;
             // 
             // txtNome
             // 
             txtNome.BorderRadius = 4;
-            txtNome.CustomizableEdges = customizableEdges19;
+            txtNome.CustomizableEdges = customizableEdges9;
             txtNome.DefaultText = "";
             txtNome.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtNome.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -259,7 +259,7 @@
             txtNome.Name = "txtNome";
             txtNome.PlaceholderText = "Nome";
             txtNome.SelectedText = "";
-            txtNome.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            txtNome.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtNome.Size = new Size(285, 23);
             txtNome.TabIndex = 6;
             // 
@@ -296,6 +296,7 @@
             cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
             cadastrarToolStripMenuItem1.Size = new Size(161, 22);
             cadastrarToolStripMenuItem1.Text = "Cadastrar";
+            cadastrarToolStripMenuItem1.Click += cadastrarToolStripMenuItem1_Click;
             // 
             // editarVToolStripMenuItem
             // 
@@ -304,6 +305,7 @@
             editarVToolStripMenuItem.Name = "editarVToolStripMenuItem";
             editarVToolStripMenuItem.Size = new Size(161, 22);
             editarVToolStripMenuItem.Text = "Editar Voluntário";
+            editarVToolStripMenuItem.Click += editarVToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
@@ -332,6 +334,7 @@
             cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
             cadastrarToolStripMenuItem.Size = new Size(145, 22);
             cadastrarToolStripMenuItem.Text = "Cadastrar";
+            cadastrarToolStripMenuItem.Click += cadastrarToolStripMenuItem_Click;
             // 
             // editarProjetoToolStripMenuItem
             // 
@@ -340,6 +343,7 @@
             editarProjetoToolStripMenuItem.Name = "editarProjetoToolStripMenuItem";
             editarProjetoToolStripMenuItem.Size = new Size(145, 22);
             editarProjetoToolStripMenuItem.Text = "Editar Projeto";
+            editarProjetoToolStripMenuItem.Click += editarProjetoToolStripMenuItem_Click;
             // 
             // toolStripSeparator2
             // 
@@ -368,6 +372,7 @@
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             cadastroToolStripMenuItem.Size = new Size(133, 22);
             cadastroToolStripMenuItem.Text = "Cadastro";
+            cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
             // editarLIderToolStripMenuItem
             // 
@@ -376,6 +381,7 @@
             editarLIderToolStripMenuItem.Name = "editarLIderToolStripMenuItem";
             editarLIderToolStripMenuItem.Size = new Size(133, 22);
             editarLIderToolStripMenuItem.Text = "Editar LIder";
+            editarLIderToolStripMenuItem.Click += editarLIderToolStripMenuItem_Click;
             // 
             // thunderControlBox1
             // 
@@ -400,6 +406,7 @@
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(110, 38);
             Name = "TelaLíder";
+            StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
             formTheme1.ResumeLayout(false);
             formTheme1.PerformLayout();

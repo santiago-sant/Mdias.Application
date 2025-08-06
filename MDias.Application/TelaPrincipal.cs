@@ -24,28 +24,28 @@ namespace MDias.Application
         {
             TelaVoluntario telaVolutario = new TelaVoluntario();
             telaVolutario.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void editarVToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaControleVoluntario telaControleVoluntario = new TelaControleVoluntario();
             telaControleVoluntario.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaProjeto telaProjeto = new TelaProjeto();
             telaProjeto.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void editarProjetoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaControleProjeto telaControleProjeto = new TelaControleProjeto();
             telaControleProjeto.Show();
-            this.Hide();
+            this.Close();
 
         }
 
@@ -53,14 +53,16 @@ namespace MDias.Application
         {
             TelaLíder telaLider = new TelaLíder();
             telaLider.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void editarLIderToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaControleLider telaControleLider = new TelaControleLider();
             telaControleLider.Show();
-            this.Hide();
+            this.Close();
         }
+
+
     }
 }

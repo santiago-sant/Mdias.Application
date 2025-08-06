@@ -90,7 +90,6 @@ namespace MDias.Application
                         int resultado = comando.ExecuteNonQuery();
                         return resultado > 0;
                     }
-
                 }
             }
             catch (Exception ex)
@@ -115,7 +114,6 @@ namespace MDias.Application
                         int linhasAfetadas = comando.ExecuteNonQuery();
                         return linhasAfetadas > 0;
                     }
-
                 }
             }
             catch (Exception ex)
@@ -140,7 +138,6 @@ namespace MDias.Application
                         int linhasAfetadas = comando.ExecuteNonQuery();
                         return linhasAfetadas > 0;
                     }
-
                 }
             }
             catch (Exception ex)
@@ -234,7 +231,7 @@ namespace MDias.Application
             {
                 using (MySqlConnection conexaoBanco = new conexaoBD().conectar())
                 {
-                    string query = "SELECT * FROM lider";
+                    string query = "SELECT * FROM lider WHERE ativo=1";
                     MySqlCommand cmd = new MySqlCommand(query, conexaoBanco);
                     MySqlDataAdapter adaptador = new MySqlDataAdapter(cmd);
                     adaptador.Fill(tabela);

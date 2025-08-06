@@ -82,12 +82,13 @@
             formTheme1.Font = new Font("Segoe UI", 8F);
             formTheme1.ForeColor = Color.FromArgb(142, 142, 142);
             formTheme1.Location = new Point(0, 0);
+            formTheme1.Margin = new Padding(3, 2, 3, 2);
             formTheme1.Name = "formTheme1";
-            formTheme1.Padding = new Padding(3, 28, 3, 28);
+            formTheme1.Padding = new Padding(3, 21, 3, 21);
             formTheme1.Sizable = true;
-            formTheme1.Size = new Size(800, 451);
+            formTheme1.Size = new Size(700, 338);
             formTheme1.SmartBounds = false;
-            formTheme1.StartPosition = FormStartPosition.WindowsDefaultLocation;
+            formTheme1.StartPosition = FormStartPosition.CenterScreen;
             formTheme1.TabIndex = 2;
             formTheme1.Click += formTheme1_Click;
             // 
@@ -95,9 +96,10 @@
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel2.Location = new Point(429, 133);
+            guna2HtmlLabel2.Location = new Point(375, 100);
+            guna2HtmlLabel2.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(117, 22);
+            guna2HtmlLabel2.Size = new Size(89, 17);
             guna2HtmlLabel2.TabIndex = 29;
             guna2HtmlLabel2.Text = "Ex : 00000000000";
             // 
@@ -105,9 +107,10 @@
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel1.Location = new Point(59, 195);
+            guna2HtmlLabel1.Location = new Point(52, 146);
+            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(151, 22);
+            guna2HtmlLabel1.Size = new Size(120, 17);
             guna2HtmlLabel1.TabIndex = 28;
             guna2HtmlLabel1.Text = "Ex :  Rua machado, 234";
             // 
@@ -116,11 +119,10 @@
             btnCadastrarVoluntarios.Customization = "Kioq/zIyMv8yMjL/Kioq/y8vL/8nJyf//v7+/yMjI/8qKir/";
             btnCadastrarVoluntarios.Font = new Font("Verdana", 8F);
             btnCadastrarVoluntarios.Image = null;
-            btnCadastrarVoluntarios.Location = new Point(59, 315);
-            btnCadastrarVoluntarios.Margin = new Padding(3, 4, 3, 4);
+            btnCadastrarVoluntarios.Location = new Point(52, 236);
             btnCadastrarVoluntarios.Name = "btnCadastrarVoluntarios";
             btnCadastrarVoluntarios.NoRounding = false;
-            btnCadastrarVoluntarios.Size = new Size(137, 53);
+            btnCadastrarVoluntarios.Size = new Size(120, 40);
             btnCadastrarVoluntarios.TabIndex = 27;
             btnCadastrarVoluntarios.Text = "Cadastrar";
             btnCadastrarVoluntarios.TextAlignment = HorizontalAlignment.Center;
@@ -140,13 +142,13 @@
             txtHabilidade.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHabilidade.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtHabilidade.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtHabilidade.Location = new Point(59, 227);
-            txtHabilidade.Margin = new Padding(5, 5, 5, 5);
+            txtHabilidade.Location = new Point(52, 170);
+            txtHabilidade.Margin = new Padding(4, 4, 4, 4);
             txtHabilidade.Name = "txtHabilidade";
             txtHabilidade.PlaceholderText = "Habilidades";
             txtHabilidade.SelectedText = "";
             txtHabilidade.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtHabilidade.Size = new Size(693, 31);
+            txtHabilidade.Size = new Size(606, 23);
             txtHabilidade.TabIndex = 13;
             // 
             // txtCPF
@@ -162,14 +164,14 @@
             txtCPF.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtCPF.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtCPF.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtCPF.Location = new Point(426, 99);
-            txtCPF.Margin = new Padding(5, 5, 5, 5);
+            txtCPF.Location = new Point(373, 74);
+            txtCPF.Margin = new Padding(4, 4, 4, 4);
             txtCPF.Name = "txtCPF";
             txtCPF.PasswordChar = '.';
             txtCPF.PlaceholderText = "CPF";
             txtCPF.SelectedText = "";
             txtCPF.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtCPF.Size = new Size(326, 31);
+            txtCPF.Size = new Size(285, 23);
             txtCPF.TabIndex = 12;
             // 
             // txtTelefone
@@ -185,13 +187,13 @@
             txtTelefone.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTelefone.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtTelefone.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTelefone.Location = new Point(426, 159);
-            txtTelefone.Margin = new Padding(5, 5, 5, 5);
+            txtTelefone.Location = new Point(373, 119);
+            txtTelefone.Margin = new Padding(4, 4, 4, 4);
             txtTelefone.Name = "txtTelefone";
             txtTelefone.PlaceholderText = "Telefone ";
             txtTelefone.SelectedText = "";
             txtTelefone.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtTelefone.Size = new Size(326, 31);
+            txtTelefone.Size = new Size(285, 23);
             txtTelefone.TabIndex = 11;
             // 
             // txtEndereco
@@ -207,13 +209,13 @@
             txtEndereco.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEndereco.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtEndereco.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtEndereco.Location = new Point(59, 159);
-            txtEndereco.Margin = new Padding(5, 5, 5, 5);
+            txtEndereco.Location = new Point(52, 119);
+            txtEndereco.Margin = new Padding(4, 4, 4, 4);
             txtEndereco.Name = "txtEndereco";
             txtEndereco.PlaceholderText = "Endereço";
             txtEndereco.SelectedText = "";
             txtEndereco.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtEndereco.Size = new Size(326, 31);
+            txtEndereco.Size = new Size(285, 23);
             txtEndereco.TabIndex = 10;
             // 
             // txtNome
@@ -229,13 +231,13 @@
             txtNome.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNome.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNome.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtNome.Location = new Point(59, 99);
-            txtNome.Margin = new Padding(5, 5, 5, 5);
+            txtNome.Location = new Point(52, 74);
+            txtNome.Margin = new Padding(4, 4, 4, 4);
             txtNome.Name = "txtNome";
             txtNome.PlaceholderText = "Nome";
             txtNome.SelectedText = "";
             txtNome.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtNome.Size = new Size(326, 31);
+            txtNome.Size = new Size(285, 23);
             txtNome.TabIndex = 6;
             // 
             // crownToolStrip1
@@ -245,10 +247,10 @@
             crownToolStrip1.ForeColor = Color.FromArgb(220, 220, 220);
             crownToolStrip1.ImageScalingSize = new Size(20, 20);
             crownToolStrip1.Items.AddRange(new ToolStripItem[] { toolStripDropDownButton3, toolStripSeparator1, toolStripDropDownButton2, toolStripSeparator2, toolStripDropDownButton1 });
-            crownToolStrip1.Location = new Point(3, 28);
+            crownToolStrip1.Location = new Point(3, 21);
             crownToolStrip1.Name = "crownToolStrip1";
-            crownToolStrip1.Padding = new Padding(5, 0, 1, 0);
-            crownToolStrip1.Size = new Size(794, 28);
+            crownToolStrip1.Padding = new Padding(4, 0, 1, 0);
+            crownToolStrip1.Size = new Size(694, 21);
             crownToolStrip1.TabIndex = 1;
             crownToolStrip1.Text = "crownToolStrip1";
             // 
@@ -261,7 +263,7 @@
             toolStripDropDownButton3.Image = (Image)resources.GetObject("toolStripDropDownButton3.Image");
             toolStripDropDownButton3.ImageTransparentColor = Color.Magenta;
             toolStripDropDownButton3.Name = "toolStripDropDownButton3";
-            toolStripDropDownButton3.Size = new Size(91, 25);
+            toolStripDropDownButton3.Size = new Size(74, 18);
             toolStripDropDownButton3.Text = "Voluntário";
             // 
             // cadastrarToolStripMenuItem1
@@ -269,7 +271,7 @@
             cadastrarToolStripMenuItem1.BackColor = Color.FromArgb(60, 63, 65);
             cadastrarToolStripMenuItem1.ForeColor = Color.FromArgb(220, 220, 220);
             cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            cadastrarToolStripMenuItem1.Size = new Size(203, 26);
+            cadastrarToolStripMenuItem1.Size = new Size(161, 22);
             cadastrarToolStripMenuItem1.Text = "Cadastrar";
             cadastrarToolStripMenuItem1.Click += cadastrarToolStripMenuItem1_Click;
             // 
@@ -278,7 +280,7 @@
             editarVToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarVToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarVToolStripMenuItem.Name = "editarVToolStripMenuItem";
-            editarVToolStripMenuItem.Size = new Size(203, 26);
+            editarVToolStripMenuItem.Size = new Size(161, 22);
             editarVToolStripMenuItem.Text = "Editar Voluntário";
             editarVToolStripMenuItem.Click += editarVToolStripMenuItem_Click;
             // 
@@ -288,7 +290,7 @@
             toolStripSeparator1.ForeColor = Color.FromArgb(220, 220, 220);
             toolStripSeparator1.Margin = new Padding(0, 0, 2, 0);
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(6, 28);
+            toolStripSeparator1.Size = new Size(6, 21);
             // 
             // toolStripDropDownButton2
             // 
@@ -299,7 +301,7 @@
             toolStripDropDownButton2.Image = (Image)resources.GetObject("toolStripDropDownButton2.Image");
             toolStripDropDownButton2.ImageTransparentColor = Color.Magenta;
             toolStripDropDownButton2.Name = "toolStripDropDownButton2";
-            toolStripDropDownButton2.Size = new Size(71, 25);
+            toolStripDropDownButton2.Size = new Size(58, 18);
             toolStripDropDownButton2.Text = "Projeto";
             // 
             // cadastrarToolStripMenuItem
@@ -307,7 +309,7 @@
             cadastrarToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cadastrarToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            cadastrarToolStripMenuItem.Size = new Size(183, 26);
+            cadastrarToolStripMenuItem.Size = new Size(145, 22);
             cadastrarToolStripMenuItem.Text = "Cadastrar";
             cadastrarToolStripMenuItem.Click += cadastrarToolStripMenuItem_Click;
             // 
@@ -316,7 +318,7 @@
             editarProjetoToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarProjetoToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarProjetoToolStripMenuItem.Name = "editarProjetoToolStripMenuItem";
-            editarProjetoToolStripMenuItem.Size = new Size(183, 26);
+            editarProjetoToolStripMenuItem.Size = new Size(145, 22);
             editarProjetoToolStripMenuItem.Text = "Editar Projeto";
             editarProjetoToolStripMenuItem.Click += editarProjetoToolStripMenuItem_Click;
             // 
@@ -326,7 +328,7 @@
             toolStripSeparator2.ForeColor = Color.FromArgb(220, 220, 220);
             toolStripSeparator2.Margin = new Padding(0, 0, 2, 0);
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(6, 28);
+            toolStripSeparator2.Size = new Size(6, 21);
             // 
             // toolStripDropDownButton1
             // 
@@ -337,7 +339,7 @@
             toolStripDropDownButton1.Image = (Image)resources.GetObject("toolStripDropDownButton1.Image");
             toolStripDropDownButton1.ImageTransparentColor = Color.Magenta;
             toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            toolStripDropDownButton1.Size = new Size(56, 25);
+            toolStripDropDownButton1.Size = new Size(46, 18);
             toolStripDropDownButton1.Text = "Lider";
             // 
             // cadastroToolStripMenuItem
@@ -345,7 +347,7 @@
             cadastroToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cadastroToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(168, 26);
+            cadastroToolStripMenuItem.Size = new Size(133, 22);
             cadastroToolStripMenuItem.Text = "Cadastro";
             cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
@@ -354,7 +356,7 @@
             editarLIderToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarLIderToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarLIderToolStripMenuItem.Name = "editarLIderToolStripMenuItem";
-            editarLIderToolStripMenuItem.Size = new Size(168, 26);
+            editarLIderToolStripMenuItem.Size = new Size(133, 22);
             editarLIderToolStripMenuItem.Text = "Editar LIder";
             editarLIderToolStripMenuItem.Click += editarLIderToolStripMenuItem_Click;
             // 
@@ -364,21 +366,24 @@
             thunderControlBox1.BackColor = Color.Transparent;
             thunderControlBox1.DefaultLocation = true;
             thunderControlBox1.ForeColor = Color.White;
-            thunderControlBox1.Location = new Point(713, 4);
+            thunderControlBox1.Location = new Point(625, 2);
+            thunderControlBox1.Margin = new Padding(3, 2, 3, 2);
             thunderControlBox1.Name = "thunderControlBox1";
-            thunderControlBox1.Size = new Size(83, 24);
+            thunderControlBox1.Size = new Size(73, 18);
             thunderControlBox1.TabIndex = 0;
             thunderControlBox1.Text = "thunderControlBox1";
             // 
             // TelaVoluntario
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 451);
+            ClientSize = new Size(700, 338);
             Controls.Add(formTheme1);
             FormBorderStyle = FormBorderStyle.None;
-            MinimumSize = new Size(126, 51);
+            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(110, 38);
             Name = "TelaVoluntario";
+            StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
             formTheme1.ResumeLayout(false);
             formTheme1.PerformLayout();

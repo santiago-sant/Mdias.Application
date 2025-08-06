@@ -61,7 +61,7 @@
             formTheme1.Sizable = true;
             formTheme1.Size = new Size(700, 338);
             formTheme1.SmartBounds = false;
-            formTheme1.StartPosition = FormStartPosition.WindowsDefaultLocation;
+            formTheme1.StartPosition = FormStartPosition.CenterScreen;
             formTheme1.TabIndex = 0;
             formTheme1.Click += formTheme1_Click;
             // 
@@ -160,6 +160,7 @@
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(110, 38);
             Name = "TelaLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
             formTheme1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)kryptonPictureBox1).EndInit();

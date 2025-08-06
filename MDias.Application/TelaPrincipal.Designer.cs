@@ -65,7 +65,7 @@
             formTheme1.Sizable = true;
             formTheme1.Size = new Size(700, 338);
             formTheme1.SmartBounds = false;
-            formTheme1.StartPosition = FormStartPosition.WindowsDefaultLocation;
+            formTheme1.StartPosition = FormStartPosition.CenterScreen;
             formTheme1.TabIndex = 1;
             // 
             // crownToolStrip1
@@ -175,7 +175,7 @@
             cadastroToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cadastroToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(180, 22);
+            cadastroToolStripMenuItem.Size = new Size(133, 22);
             cadastroToolStripMenuItem.Text = "Cadastro";
             cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
@@ -184,7 +184,7 @@
             editarLIderToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarLIderToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarLIderToolStripMenuItem.Name = "editarLIderToolStripMenuItem";
-            editarLIderToolStripMenuItem.Size = new Size(180, 22);
+            editarLIderToolStripMenuItem.Size = new Size(133, 22);
             editarLIderToolStripMenuItem.Text = "Editar LIder";
             editarLIderToolStripMenuItem.Click += editarLIderToolStripMenuItem_Click;
             // 
@@ -222,6 +222,7 @@
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(110, 38);
             Name = "TelaPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
             formTheme1.ResumeLayout(false);
             crownToolStrip1.ResumeLayout(false);

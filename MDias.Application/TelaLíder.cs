@@ -22,7 +22,15 @@ namespace MDias.Application
 
         }
 
-        private void btnCadastrarVoluntarios_Click(object sender, EventArgs e)
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaProjeto telaProjeto = new TelaProjeto();
+            telaProjeto.Show();
+            this.Close();
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -56,6 +64,41 @@ namespace MDias.Application
             {
                 MessageBox.Show("Ocorreu um erro: " + ex.Message);
             }
+        }
+
+        private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TelaVoluntario telaVoluntario = new TelaVoluntario();
+            telaVoluntario.Show();
+            this.Close();
+        }
+
+        private void editarVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaControleVoluntario telaControleVoluntario = new TelaControleVoluntario();
+            telaControleVoluntario.Show();
+            this.Close();
+        }
+
+        private void editarProjetoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaControleProjeto telaControleProjeto = new TelaControleProjeto();
+            telaControleProjeto.Show();
+            this.Close();
+        }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaLíder telaLider = new TelaLíder();
+            telaLider.Show();
+            this.Close();
+        }
+
+        private void editarLIderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaControleLider telaControleLider = new TelaControleLider();
+            telaControleLider.Show();
+            this.Close();
         }
     }
 }

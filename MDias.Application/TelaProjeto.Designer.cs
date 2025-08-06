@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaProjeto));
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             dtpData = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -76,14 +76,14 @@
             formTheme1.Sizable = true;
             formTheme1.Size = new Size(700, 338);
             formTheme1.SmartBounds = false;
-            formTheme1.StartPosition = FormStartPosition.WindowsDefaultLocation;
+            formTheme1.StartPosition = FormStartPosition.CenterScreen;
             formTheme1.TabIndex = 3;
             // 
             // dtpData
             // 
             dtpData.BorderRadius = 4;
             dtpData.Checked = true;
-            dtpData.CustomizableEdges = customizableEdges7;
+            dtpData.CustomizableEdges = customizableEdges1;
             dtpData.FillColor = Color.White;
             dtpData.Font = new Font("Segoe UI", 9F);
             dtpData.Format = DateTimePickerFormat.Long;
@@ -92,7 +92,7 @@
             dtpData.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtpData.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dtpData.Name = "dtpData";
-            dtpData.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            dtpData.ShadowDecoration.CustomizableEdges = customizableEdges2;
             dtpData.Size = new Size(285, 24);
             dtpData.TabIndex = 29;
             dtpData.Value = new DateTime(2025, 7, 25, 16, 23, 22, 604);
@@ -115,7 +115,7 @@
             // txtEndereco
             // 
             txtEndereco.BorderRadius = 4;
-            txtEndereco.CustomizableEdges = customizableEdges9;
+            txtEndereco.CustomizableEdges = customizableEdges3;
             txtEndereco.DefaultText = "";
             txtEndereco.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtEndereco.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -130,14 +130,14 @@
             txtEndereco.Name = "txtEndereco";
             txtEndereco.PlaceholderText = "Endereço";
             txtEndereco.SelectedText = "";
-            txtEndereco.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtEndereco.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtEndereco.Size = new Size(285, 23);
             txtEndereco.TabIndex = 10;
             // 
             // txtNome
             // 
             txtNome.BorderRadius = 4;
-            txtNome.CustomizableEdges = customizableEdges11;
+            txtNome.CustomizableEdges = customizableEdges5;
             txtNome.DefaultText = "";
             txtNome.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtNome.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -152,7 +152,7 @@
             txtNome.Name = "txtNome";
             txtNome.PlaceholderText = "Nome";
             txtNome.SelectedText = "";
-            txtNome.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtNome.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtNome.Size = new Size(285, 23);
             txtNome.TabIndex = 6;
             // 
@@ -299,6 +299,7 @@
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(110, 38);
             Name = "TelaProjeto";
+            StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
             formTheme1.ResumeLayout(false);
             crownToolStrip1.ResumeLayout(false);
