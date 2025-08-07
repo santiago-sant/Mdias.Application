@@ -408,6 +408,7 @@
             Name = "TelaLíder";
             StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
+            Load += TelaLíder_Load;
             formTheme1.ResumeLayout(false);
             formTheme1.PerformLayout();
             crownToolStrip1.ResumeLayout(false);

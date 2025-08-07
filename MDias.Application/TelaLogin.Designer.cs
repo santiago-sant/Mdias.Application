@@ -162,6 +162,7 @@
             Name = "TelaLogin";
             StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
+            
             formTheme1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)kryptonPictureBox1).EndInit();
             ResumeLayout(false);

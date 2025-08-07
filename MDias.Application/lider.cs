@@ -71,6 +71,29 @@ namespace MDias.Application
             }
         }
 
+        public static DataTable PesquisarLiderPorNome(string nome)
+        {
+            DataTable dt = new DataTable();
+
+            using (MySqlConnection conexao = new conexaoBD().conectar())
+            {
+                // Consulta para pesquisar líderes pelo nome
+                string sql = "SELECT Id_Lider, Nome, Cpf, Telefone, Endereco FROM lider WHERE Nome LIKE @nome";
+
+                using (MySqlCommand cmd = new MySqlCommand(sql, conexao))
+                {
+                    cmd.Parameters.AddWithValue("@nome", "%" + nome + "%");
+
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                    {
+                        da.Fill(dt);  // Preenche a DataTable com os dados
+                    }
+                }
+            }
+
+            return dt;  // Retorna a tabela com os dados encontrados
+        }
+
         public bool cadastrarLider()
         {
             try
@@ -177,10 +200,9 @@ namespace MDias.Application
         {
             try
             {
-                string senhaCriptografada = CriptografarSenha(Senha);
                 using (MySqlConnection conexao = new conexaoBD().conectar())
                 {
-                    string query = "UPDATE lider SET Nome = @Nome, Telefone = @Telefone, Endereco = @Endereco, Cpf = @Cpf, Senha = @Senha WHERE Id_Lider = @Id_Lider";
+                    string query = "UPDATE lider SET Nome = @Nome, Telefone = @Telefone, Endereco = @Endereco, Cpf = @Cpf WHERE Id_Lider = @Id_Lider";
                     using (MySqlCommand comando = new MySqlCommand(query, conexao))
                     {
                         comando.Parameters.AddWithValue("@Id_Lider", Id_Lider);
@@ -188,7 +210,6 @@ namespace MDias.Application
                         comando.Parameters.AddWithValue("@Telefone", Telefone);
                         comando.Parameters.AddWithValue("@Endereco", Endereco);
                         comando.Parameters.AddWithValue("@Cpf", Cpf);
-                        comando.Parameters.AddWithValue("@Senha", senhaCriptografada);
                         int resultado = comando.ExecuteNonQuery();
                         return resultado > 0;
                     }

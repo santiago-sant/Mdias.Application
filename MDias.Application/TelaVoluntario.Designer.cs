@@ -143,7 +143,7 @@
             txtHabilidade.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtHabilidade.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHabilidade.Location = new Point(52, 170);
-            txtHabilidade.Margin = new Padding(4, 4, 4, 4);
+            txtHabilidade.Margin = new Padding(4);
             txtHabilidade.Name = "txtHabilidade";
             txtHabilidade.PlaceholderText = "Habilidades";
             txtHabilidade.SelectedText = "";
@@ -165,9 +165,8 @@
             txtCPF.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtCPF.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtCPF.Location = new Point(373, 74);
-            txtCPF.Margin = new Padding(4, 4, 4, 4);
+            txtCPF.Margin = new Padding(4);
             txtCPF.Name = "txtCPF";
-            txtCPF.PasswordChar = '.';
             txtCPF.PlaceholderText = "CPF";
             txtCPF.SelectedText = "";
             txtCPF.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -188,7 +187,7 @@
             txtTelefone.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtTelefone.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTelefone.Location = new Point(373, 119);
-            txtTelefone.Margin = new Padding(4, 4, 4, 4);
+            txtTelefone.Margin = new Padding(4);
             txtTelefone.Name = "txtTelefone";
             txtTelefone.PlaceholderText = "Telefone ";
             txtTelefone.SelectedText = "";
@@ -210,7 +209,7 @@
             txtEndereco.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtEndereco.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEndereco.Location = new Point(52, 119);
-            txtEndereco.Margin = new Padding(4, 4, 4, 4);
+            txtEndereco.Margin = new Padding(4);
             txtEndereco.Name = "txtEndereco";
             txtEndereco.PlaceholderText = "Endereço";
             txtEndereco.SelectedText = "";
@@ -232,7 +231,7 @@
             txtNome.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNome.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNome.Location = new Point(52, 74);
-            txtNome.Margin = new Padding(4, 4, 4, 4);
+            txtNome.Margin = new Padding(4);
             txtNome.Name = "txtNome";
             txtNome.PlaceholderText = "Nome";
             txtNome.SelectedText = "";
@@ -347,7 +346,7 @@
             cadastroToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cadastroToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(133, 22);
+            cadastroToolStripMenuItem.Size = new Size(180, 22);
             cadastroToolStripMenuItem.Text = "Cadastro";
             cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
@@ -356,7 +355,7 @@
             editarLIderToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarLIderToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarLIderToolStripMenuItem.Name = "editarLIderToolStripMenuItem";
-            editarLIderToolStripMenuItem.Size = new Size(133, 22);
+            editarLIderToolStripMenuItem.Size = new Size(180, 22);
             editarLIderToolStripMenuItem.Text = "Editar LIder";
             editarLIderToolStripMenuItem.Click += editarLIderToolStripMenuItem_Click;
             // 
@@ -366,7 +365,7 @@
             thunderControlBox1.BackColor = Color.Transparent;
             thunderControlBox1.DefaultLocation = true;
             thunderControlBox1.ForeColor = Color.White;
-            thunderControlBox1.Location = new Point(625, 2);
+            thunderControlBox1.Location = new Point(624, 3);
             thunderControlBox1.Margin = new Padding(3, 2, 3, 2);
             thunderControlBox1.Name = "thunderControlBox1";
             thunderControlBox1.Size = new Size(73, 18);
@@ -385,6 +384,7 @@
             Name = "TelaVoluntario";
             StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
+            Load += TelaVoluntario_Load;
             formTheme1.ResumeLayout(false);
             formTheme1.PerformLayout();
             crownToolStrip1.ResumeLayout(false);

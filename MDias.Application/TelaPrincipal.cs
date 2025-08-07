@@ -18,8 +18,6 @@ namespace MDias.Application
             InitializeComponent();
         }
 
-
-
         private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             TelaVoluntario telaVolutario = new TelaVoluntario();
@@ -46,7 +44,6 @@ namespace MDias.Application
             TelaControleProjeto telaControleProjeto = new TelaControleProjeto();
             telaControleProjeto.Show();
             this.Close();
-
         }
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -63,6 +60,12 @@ namespace MDias.Application
             this.Close();
         }
 
-
+        private void TelaPrincipal_Load(object sender, EventArgs e)
+        {
+            if (sessao.TipoUsuario == "lider")
+            {
+                toolStripDropDownButton1.Visible = false; // <- aqui você oculta o item do MenuStrip
+            }
+        }
     }
 }

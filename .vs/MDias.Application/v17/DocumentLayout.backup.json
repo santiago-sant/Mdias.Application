@@ -1,22 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alvar\\OneDrive\\\u00C1rea de Trabalho\\MDias.Application\\",
+  "WorkspaceRootPath": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\alvar\\onedrive\\\u00E1rea de trabalho\\mdias.application\\mdias.application\\voluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\voluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\desktop\\mdias\\mdias.application\\mdias.application\\telacontrolelider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontrolelider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\alvar\\onedrive\\\u00E1rea de trabalho\\mdias.application\\mdias.application\\telacontrolevoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontrolevoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\desktop\\mdias\\mdias.application\\mdias.application\\telacontrolelider.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontrolelider.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\alvar\\onedrive\\\u00E1rea de trabalho\\mdias.application\\mdias.application\\telacontrolevoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontrolevoluntario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\desktop\\mdias\\mdias.application\\mdias.application\\telacontroleprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontroleprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\alvar\\onedrive\\\u00E1rea de trabalho\\mdias.application\\mdias.application\\conexaobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\conexaobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\desktop\\mdias\\mdias.application\\mdias.application\\telacontroleprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontroleprojeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\desktop\\mdias\\mdias.application\\mdias.application\\telacontrolelider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\telacontrolelider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|c:\\users\\aluno_manha\\desktop\\mdias\\mdias.application\\mdias.application\\lider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C8A209-6886-43FF-9A7E-9C8F8F9324DC}|MDias.Application\\MDias.Application.csproj|solutionrelative:mdias.application\\lider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,57 +42,82 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "voluntario.cs",
-              "DocumentMoniker": "C:\\Users\\alvar\\OneDrive\\\u00C1rea de Trabalho\\MDias.Application\\MDias.Application\\voluntario.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\voluntario.cs",
-              "ToolTip": "C:\\Users\\alvar\\OneDrive\\\u00C1rea de Trabalho\\MDias.Application\\MDias.Application\\voluntario.cs*",
-              "RelativeToolTip": "MDias.Application\\voluntario.cs*",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAIwHkAAADZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T20:38:26.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TelaControleVoluntario.cs",
-              "DocumentMoniker": "C:\\Users\\alvar\\OneDrive\\\u00C1rea de Trabalho\\MDias.Application\\MDias.Application\\TelaControleVoluntario.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\TelaControleVoluntario.cs",
-              "ToolTip": "C:\\Users\\alvar\\OneDrive\\\u00C1rea de Trabalho\\MDias.Application\\MDias.Application\\TelaControleVoluntario.cs",
-              "RelativeToolTip": "MDias.Application\\TelaControleVoluntario.cs",
-              "ViewState": "AgIAANEAAAAAAAAAAAAYwLcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T20:28:39.957Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TelaControleVoluntario.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\alvar\\OneDrive\\\u00C1rea de Trabalho\\MDias.Application\\MDias.Application\\TelaControleVoluntario.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\TelaControleVoluntario.cs",
-              "ToolTip": "C:\\Users\\alvar\\OneDrive\\\u00C1rea de Trabalho\\MDias.Application\\MDias.Application\\TelaControleVoluntario.cs [Projeto]",
-              "RelativeToolTip": "MDias.Application\\TelaControleVoluntario.cs [Projeto]",
+              "Title": "TelaControleProjeto.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\TelaControleProjeto.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaControleProjeto.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\TelaControleProjeto.cs*",
+              "RelativeToolTip": "MDias.Application\\TelaControleProjeto.cs*",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAiwK4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T20:23:39.859Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-08-07T13:56:30.771Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "conexaoBD.cs",
-              "DocumentMoniker": "C:\\Users\\alvar\\OneDrive\\\u00C1rea de Trabalho\\MDias.Application\\MDias.Application\\conexaoBD.cs",
-              "RelativeDocumentMoniker": "MDias.Application\\conexaoBD.cs",
-              "ToolTip": "C:\\Users\\alvar\\OneDrive\\\u00C1rea de Trabalho\\MDias.Application\\MDias.Application\\conexaoBD.cs",
-              "RelativeToolTip": "MDias.Application\\conexaoBD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABkAAAAAAAAAA==",
+              "Title": "TelaControleProjeto.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\TelaControleProjeto.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaControleProjeto.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\TelaControleProjeto.cs [Projeto]*",
+              "RelativeToolTip": "MDias.Application\\TelaControleProjeto.cs [Projeto]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T19:40:04.002Z",
+              "WhenOpened": "2025-08-07T13:56:29.275Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TelaControleLider.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\TelaControleLider.Designer.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaControleLider.Designer.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\TelaControleLider.Designer.cs*",
+              "RelativeToolTip": "MDias.Application\\TelaControleLider.Designer.cs*",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAIwHIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T13:46:20.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TelaControleLider.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\TelaControleLider.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaControleLider.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\TelaControleLider.cs*",
+              "RelativeToolTip": "MDias.Application\\TelaControleLider.cs*",
+              "ViewState": "AgIAAD4BAAAAAAAAAADwv2IBAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T13:33:42.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TelaControleLider.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\TelaControleLider.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\TelaControleLider.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\TelaControleLider.cs [Projeto]*",
+              "RelativeToolTip": "MDias.Application\\TelaControleLider.cs [Projeto]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T13:33:39.442Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "lider.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\lider.cs",
+              "RelativeDocumentMoniker": "MDias.Application\\lider.cs",
+              "ToolTip": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\lider.cs",
+              "RelativeToolTip": "MDias.Application\\lider.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAAwwMoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T13:32:50.244Z",
               "EditorCaption": ""
             }
           ]

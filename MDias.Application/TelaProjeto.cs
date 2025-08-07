@@ -37,7 +37,7 @@ namespace MDias.Application
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           MessageBox.Show("Você já está na tela de cadastro de projetos.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Você já está na tela de cadastro de projetos.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void editarProjetoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -89,6 +89,14 @@ namespace MDias.Application
             catch (Exception ex)
             {
                 MessageBox.Show("Erro inesperado: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void TelaProjeto_Load(object sender, EventArgs e)
+        {
+            if (sessao.TipoUsuario == "lider")
+            {
+                toolStripDropDownButton1.Visible = false; // <- aqui você oculta o item do MenuStrip
             }
         }
     }

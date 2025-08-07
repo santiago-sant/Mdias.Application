@@ -125,7 +125,6 @@ namespace MDias.Application
             }
         }
 
-
         private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             TelaVoluntario telaVolutario = new TelaVoluntario();
@@ -168,8 +167,6 @@ namespace MDias.Application
             this.Close();
         }
 
-
-
         private void formTheme1_Click(object sender, EventArgs e)
         {
         }
@@ -177,11 +174,15 @@ namespace MDias.Application
         private void TelaControleVoluntario_Load(object sender, EventArgs e)
         {
             CarregarVoluntariosComProjetos();
+
+            if (sessao.TipoUsuario == "lider")
+            {
+                toolStripDropDownButton1.Visible = false; // <- aqui você oculta o item do MenuStrip
+            }
         }
 
         private void dgvVoluntario_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            
         }
 
         private void dgvVoluntario_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -263,13 +264,75 @@ namespace MDias.Application
                         MessageBox.Show("Erro na edição: " + ex.Message);
                     }
                 }
-
             }
         }
 
         private void dgvVoluntario_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+        }
 
+        private void txtBuscarNome_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                PesquisarVoluntarios();
+                e.Handled = true;
+                e.SuppressKeyPress = true; // Evita o 'beep' do Enter
+            }
+        }
+
+        private void PesquisarVoluntarios()
+        {
+            string termo = txtBuscar.Text.Trim();
+
+            if (string.IsNullOrEmpty(termo))
+            {
+                CarregarVoluntariosComProjetos();
+                return;
+            }
+
+            try
+            {
+                DataTable resultado = voluntario.PesquisarPorNome(termo); // Método que você deve ter na sua classe
+
+                dgvVoluntario.DataSource = null;
+                dgvVoluntario.Columns.Clear();
+                dgvVoluntario.AutoGenerateColumns = false;
+
+                dgvVoluntario.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Id_Voluntario",
+                    HeaderText = "ID",
+                    Name = "Id_Voluntario"
+                });
+
+                dgvVoluntario.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Nome",
+                    HeaderText = "Nome",
+                    Name = "Nome"
+                });
+
+                dgvVoluntario.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Cpf",
+                    HeaderText = "CPF",
+                    Name = "Cpf"
+                });
+
+                dgvVoluntario.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Habilidade",
+                    HeaderText = "Habilidade",
+                    Name = "Habilidade"
+                });
+
+                dgvVoluntario.DataSource = resultado;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao buscar: " + ex.Message);
+            }
         }
     }
 }

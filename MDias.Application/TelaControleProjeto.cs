@@ -77,6 +77,23 @@ namespace MDias.Application
                     DataPropertyName = "Id_Lider"
                 });
 
+                dgvProjetos.Columns.Add(new DataGridViewButtonColumn()
+                {
+                    HeaderText = "Excluir",
+                    Text = "Excluir",
+                    UseColumnTextForButtonValue = true,
+                    Name = "Excluir"
+                });
+
+                // Botão Editar
+                dgvProjetos.Columns.Add(new DataGridViewButtonColumn()
+                {
+                    HeaderText = "Editar",
+                    Text = "Editar",
+                    UseColumnTextForButtonValue = true,
+                    Name = "Editar"
+                });
+
                 dgvProjetos.DataSource = projetos;
             }
             catch (Exception ex)
@@ -87,6 +104,72 @@ namespace MDias.Application
 
         private void dgvVoluntários_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Verifica se clicou em uma célula de botão e em uma linha válida
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                string columnName = dgvProjetos.Columns[e.ColumnIndex].Name;
+
+                int idProjeto = Convert.ToInt32(dgvProjetos.Rows[e.RowIndex].Cells["Id_Projeto"].Value);
+
+                // === Botão EXCLUIR ===
+                if (columnName == "Excluir")
+                {
+                    DialogResult result = MessageBox.Show("Deseja realmente excluir este voluntário?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        projeto Projeto = new projeto();
+                        Projeto.Id_Projeto = idProjeto;
+
+                        bool sucesso = Projeto.ExcluirProjeto();
+                        if (sucesso)
+                        {
+                            MessageBox.Show("Projeto excluído com sucesso!");
+                            CarregarProjetosPorNivel();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro ao excluir Projeto.");
+                        }
+                    }
+                }
+
+                // === Botão EDITAR ===
+                else if (columnName == "Editar")
+                {
+                    try
+                    {
+                        // Lê os valores da linha atualizada
+                        string nome = dgvProjetos.Rows[e.RowIndex].Cells["Nome"].Value?.ToString();
+                        string endereco = dgvProjetos.Rows[e.RowIndex].Cells["Endereco"].Value?.ToString();
+                        string data = dgvProjetos.Rows[e.RowIndex].Cells["Data_Realizacao"].Value?.ToString();
+
+                        // Monta o objeto Voluntario
+                        projeto Projeto = new projeto();
+                        Projeto.Id_Projeto = idProjeto;
+                        Projeto.Nome = nome;
+                        Projeto.Endereco = endereco;
+                        Projeto.Data_Realizacao = DateTime.Parse(data);
+
+                        // Atualiza no banco
+                        bool sucesso = Projeto.AtualizarProjeto();
+
+                        if (sucesso)
+                        {
+                            MessageBox.Show("Projeto atualizado com sucesso!");
+                            CarregarProjetosPorNivel(); // Recarrega a grid
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro ao atualizar Projeto.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro na edição: " + ex.Message);
+                    }
+                }
+            }
         }
 
         private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -134,6 +217,139 @@ namespace MDias.Application
         private void TelaControleProjeto_Load(object sender, EventArgs e)
         {
             CarregarProjetosPorNivel();
+
+            if (sessao.TipoUsuario == "lider")
+            {
+                toolStripDropDownButton1.Visible = false; // <- aqui você oculta o item do MenuStrip
+            }
+        }
+
+        private void PesquisarProjetos()
+        {
+            string nomeBuscado = txtBuscar.Text.Trim(); // O que foi digitado no TextBox
+
+            if (string.IsNullOrEmpty(nomeBuscado))
+            {
+                CarregarProjetosPorNivel(); // Se o campo estiver vazio, carrega todos os projetos
+                return;
+            }
+
+            try
+            {
+                // Chama a função que faz a consulta no banco
+                DataTable projetos = projeto.PesquisarProjetosPorNome(nomeBuscado);
+
+                dgvProjetos.DataSource = null;
+                dgvProjetos.Rows.Clear();
+                dgvProjetos.Columns.Clear();
+
+                // Reconfigura as colunas do DataGridView
+                dgvProjetos.AutoGenerateColumns = false;
+
+                dgvProjetos.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Id_Projeto",
+                    HeaderText = "ID",
+                    Name = "Id_Projeto"
+                });
+
+                dgvProjetos.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Nome",
+                    HeaderText = "Nome",
+                    Name = "Nome"
+                });
+
+                dgvProjetos.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Endereco",
+                    HeaderText = "Endereço",
+                    Name = "Endereco"
+                });
+
+                dgvProjetos.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Data_Realizacao",
+                    HeaderText = "Data de Realização",
+                    Name = "Data_Realizacao",
+                    DefaultCellStyle = new DataGridViewCellStyle { Format = "dd/MM/yyyy" }
+                });
+
+                // Preenche os dados no DataGridView
+                dgvProjetos.DataSource = projetos;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao buscar projetos: " + ex.Message);
+            }
+        }
+
+        private void CarregarTodosProjetos()
+        {
+            try
+            {
+                // Verifica tipo de usuário (Adm ou Lider)
+                DataTable projetos;
+                if (sessao.TipoUsuario == "Adm")
+                {
+                    projetos = projeto.CarregarTodosProjetos(); // Carrega todos os projetos para Admin
+                }
+                else
+                {
+                    projetos = projeto.CarregarProjetosDoLider(); // Carrega os projetos do líder logado
+                }
+
+                dgvProjetos.Rows.Clear(); // Limpa as linhas anteriores
+                dgvProjetos.Columns.Clear(); // Limpa as colunas anteriores
+
+                dgvProjetos.AutoGenerateColumns = false;
+
+                // Adiciona as colunas ao DataGridView
+                dgvProjetos.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Id_Projeto",
+                    HeaderText = "ID",
+                    Name = "Id_Projeto"
+                });
+
+                dgvProjetos.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Nome",
+                    HeaderText = "Nome",
+                    Name = "Nome"
+                });
+
+                dgvProjetos.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Endereco",
+                    HeaderText = "Endereço",
+                    Name = "Endereco"
+                });
+
+                dgvProjetos.Columns.Add(new DataGridViewTextBoxColumn()
+                {
+                    DataPropertyName = "Data_Realizacao",
+                    HeaderText = "Data de Realização",
+                    Name = "Data_Realizacao",
+                    DefaultCellStyle = new DataGridViewCellStyle { Format = "dd/MM/yyyy" }
+                });
+
+                // Preenche os dados no DataGridView
+                dgvProjetos.DataSource = projetos;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar todos os projetos: " + ex.Message);
+            }
+        }
+
+        private void txtBuscar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)  // Detecta quando pressionamos a tecla Enter
+            {
+                PesquisarProjetos();  // Chama a função de pesquisa
+                e.SuppressKeyPress = true;  // Impede o "beep" ao pressionar Enter
+            }
         }
     }
 }

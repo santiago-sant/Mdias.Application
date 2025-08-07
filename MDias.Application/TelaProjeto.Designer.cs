@@ -301,6 +301,7 @@
             Name = "TelaProjeto";
             StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
+            Load += TelaProjeto_Load;
             formTheme1.ResumeLayout(false);
             crownToolStrip1.ResumeLayout(false);
             crownToolStrip1.PerformLayout();

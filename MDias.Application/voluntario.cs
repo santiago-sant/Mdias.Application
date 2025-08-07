@@ -1,4 +1,4 @@
-﻿    using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
@@ -55,12 +55,12 @@ namespace MDias.Application
             get { return habilidade; }
             set { habilidade = value; }
         }
+
         public int Id_Projeto
         {
             get { return idProjeto; }
             set { idProjeto = value; }
         }
-
 
         public bool CadastrarVoluntario()
         {
@@ -112,6 +112,27 @@ namespace MDias.Application
             }
         }
 
+        public static DataTable PesquisarPorNome(string nome)
+        {
+            DataTable dt = new DataTable();
+
+            using (MySqlConnection conexao = new conexaoBD().conectar())
+            {
+                string sql = "SELECT Id_Voluntario, Nome, Cpf, Habilidade FROM voluntario WHERE Nome LIKE @nome";
+
+                using (MySqlCommand cmd = new MySqlCommand(sql, conexao))
+                {
+                    cmd.Parameters.AddWithValue("@nome", "%" + nome + "%");
+
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                    {
+                        da.Fill(dt);
+                    }
+                }
+            }
+
+            return dt;
+        }
 
         public bool EditarVoluntario()
         {
@@ -141,7 +162,6 @@ namespace MDias.Application
                 return false;
             }
         }
-
 
         public static DataTable ListarVoluntarios()
         {

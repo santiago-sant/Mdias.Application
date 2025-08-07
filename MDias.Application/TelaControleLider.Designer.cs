@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaControleLider));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
-            txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
+            txtBuscar = new Guna.UI2.WinForms.Guna2TextBox();
             dtgLider = new Krypton.Toolkit.KryptonDataGridView();
             crownToolStrip1 = new ReaLTaiizor.Controls.CrownToolStrip();
             toolStripDropDownButton3 = new ToolStripDropDownButton();
@@ -55,7 +55,7 @@
             // formTheme1
             // 
             formTheme1.BackColor = Color.FromArgb(32, 41, 50);
-            formTheme1.Controls.Add(txtUsuario);
+            formTheme1.Controls.Add(txtBuscar);
             formTheme1.Controls.Add(dtgLider);
             formTheme1.Controls.Add(crownToolStrip1);
             formTheme1.Controls.Add(thunderControlBox1);
@@ -72,32 +72,39 @@
             formTheme1.StartPosition = FormStartPosition.CenterScreen;
             formTheme1.TabIndex = 4;
             // 
-            // txtUsuario
+            // txtBuscar
             // 
-            txtUsuario.BorderRadius = 4;
-            txtUsuario.CustomizableEdges = customizableEdges1;
-            txtUsuario.DefaultText = "";
-            txtUsuario.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtUsuario.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtUsuario.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtUsuario.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtUsuario.FillColor = Color.FromArgb(224, 224, 224);
-            txtUsuario.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUsuario.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsuario.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUsuario.IconLeft = (Image)resources.GetObject("txtUsuario.IconLeft");
-            txtUsuario.Location = new Point(18, 60);
-            txtUsuario.Margin = new Padding(4);
-            txtUsuario.Name = "txtUsuario";
-            txtUsuario.PlaceholderText = "Nome";
-            txtUsuario.SelectedText = "";
-            txtUsuario.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtUsuario.Size = new Size(480, 23);
-            txtUsuario.TabIndex = 7;
+            txtBuscar.BorderRadius = 4;
+            txtBuscar.CustomizableEdges = customizableEdges3;
+            txtBuscar.DefaultText = "";
+            txtBuscar.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtBuscar.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtBuscar.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtBuscar.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtBuscar.FillColor = Color.FromArgb(224, 224, 224);
+            txtBuscar.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtBuscar.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBuscar.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtBuscar.IconLeft = (Image)resources.GetObject("txtBuscar.IconLeft");
+            txtBuscar.Location = new Point(18, 60);
+            txtBuscar.Margin = new Padding(4);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.PlaceholderText = "Nome";
+            txtBuscar.SelectedText = "";
+            txtBuscar.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtBuscar.Size = new Size(480, 23);
+            txtBuscar.TabIndex = 7;
+            txtBuscar.KeyDown += txtBuscar_KeyDown;
             // 
             // dtgLider
             // 
+            dtgLider.AllowUserToAddRows = false;
+            dtgLider.AllowUserToDeleteRows = false;
+            dtgLider.AllowUserToOrderColumns = true;
+            dtgLider.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgLider.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dtgLider.BorderStyle = BorderStyle.None;
+            dtgLider.CausesValidation = false;
             dtgLider.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgLider.Location = new Point(10, 106);
             dtgLider.Margin = new Padding(3, 2, 3, 2);
@@ -105,6 +112,7 @@
             dtgLider.RowHeadersWidth = 51;
             dtgLider.Size = new Size(679, 208);
             dtgLider.TabIndex = 2;
+            dtgLider.CellContentClick += dtgLider_CellContentClick;
             // 
             // crownToolStrip1
             // 
@@ -262,7 +270,7 @@
         #endregion
 
         private ReaLTaiizor.Forms.FormTheme formTheme1;
-        private Guna.UI2.WinForms.Guna2TextBox txtUsuario;
+        private Guna.UI2.WinForms.Guna2TextBox txtBuscar;
         private Krypton.Toolkit.KryptonDataGridView dtgLider;
         private ReaLTaiizor.Controls.CrownToolStrip crownToolStrip1;
         private ToolStripDropDownButton toolStripDropDownButton3;

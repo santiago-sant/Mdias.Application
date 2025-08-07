@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MDias.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50a52fade7444f9abf9b60f771d079c64ccb9b79")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f11f8be6bca087af0e8bdd14270ef34c5bfcfeb1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MDias.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MDias.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

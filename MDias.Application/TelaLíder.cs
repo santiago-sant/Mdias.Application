@@ -100,5 +100,13 @@ namespace MDias.Application
             telaControleLider.Show();
             this.Close();
         }
+
+        private void TelaLíder_Load(object sender, EventArgs e)
+        {
+            if (sessao.TipoUsuario == "lider")
+            {
+                toolStripDropDownButton1.Visible = false; // <- aqui você oculta o item do MenuStrip
+            }
+        }
     }
 }

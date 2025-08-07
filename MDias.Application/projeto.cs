@@ -66,6 +66,28 @@ namespace MDias.Application
             }
         }
 
+        public static DataTable PesquisarProjetosPorNome(string nome)
+        {
+            DataTable dt = new DataTable();
+
+            using (MySqlConnection conexao = new conexaoBD().conectar())
+            {
+                string sql = "SELECT Id_Projeto, Nome, Endereco, Data_Realizacao FROM projeto WHERE Nome LIKE @nome";
+
+                using (MySqlCommand cmd = new MySqlCommand(sql, conexao))
+                {
+                    cmd.Parameters.AddWithValue("@nome", "%" + nome + "%");  // '%' permite pesquisa parcial no nome
+
+                    using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                    {
+                        da.Fill(dt);  // Preenche o DataTable com os resultados da consulta
+                    }
+                }
+            }
+
+            return dt;
+        }
+
         public bool ExcluirProjeto()
         {
             try

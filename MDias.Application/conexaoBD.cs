@@ -9,7 +9,7 @@ namespace MDias.Application
 {
     internal class conexaoBD
     {
-        private string conexaoBanco = "Server=localhost;Database=MelhoresDias;Uid=root;Pwd='23041975';";
+        private string conexaoBanco = "Server=localhost;Database=MelhoresDias;Uid=root;Pwd='';";
 
         public MySqlConnection conectar()
         {
