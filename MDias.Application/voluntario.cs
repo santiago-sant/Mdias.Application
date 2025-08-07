@@ -1,4 +1,5 @@
 ﻿    using MySql.Data.MySqlClient;
+using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -17,6 +18,7 @@ namespace MDias.Application
         private string cpf;
         private string endereco;
         private string habilidade;
+        private int idProjeto;
 
         public int Id_Voluntario
         {
@@ -53,6 +55,12 @@ namespace MDias.Application
             get { return habilidade; }
             set { habilidade = value; }
         }
+        public int Id_Projeto
+        {
+            get { return idProjeto; }
+            set { idProjeto = value; }
+        }
+
 
         public bool CadastrarVoluntario()
         {
@@ -111,7 +119,7 @@ namespace MDias.Application
             {
                 using (MySqlConnection conexao = new conexaoBD().conectar())
                 {
-                    string query = "UPDATE voluntario SET Nome = @Nome, Telefone = @Telefone, Cpf = @Cpf, Endereco = @Endereco, Habilidade = @Habilidade WHERE Id_Voluntario = @Id_Voluntario";
+                    string query = "UPDATE voluntario SET Nome = @Nome, Cpf = @Cpf, Habilidade = @Habilidade, Telefone = @Telefone, Endereco = @Endereco, Id_Projeto = @Id_Projeto WHERE Id_Voluntario = @Id_Voluntario";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conexao))
                     {
@@ -121,6 +129,7 @@ namespace MDias.Application
                         cmd.Parameters.AddWithValue("@Cpf", Cpf);
                         cmd.Parameters.AddWithValue("@Endereco", Endereco);
                         cmd.Parameters.AddWithValue("@Habilidade", Habilidade);
+                        cmd.Parameters.AddWithValue("@Id_Projeto", Id_Projeto);
                         int resultado = cmd.ExecuteNonQuery();
                         return resultado > 0;
                     }

@@ -25,7 +25,17 @@ namespace MDias.Application
             try
             {
                 DataTable voluntarios = voluntario.ListarVoluntarios();
-                DataTable projetos = projeto.CarregarProjetosDoLider();
+
+                // Verifica tipo de usuário (Adm ou Lider)
+                DataTable projetos;
+                if (sessao.TipoUsuario == "Adm")
+                {
+                    projetos = projeto.CarregarTodosProjetos();
+                }
+                else
+                {
+                    projetos = projeto.CarregarProjetosDoLider();
+                }
 
                 dgvVoluntario.Columns.Clear();
                 dgvVoluntario.DataSource = null;
@@ -79,6 +89,7 @@ namespace MDias.Application
                 {
                     HeaderText = "Projeto",
                     Name = "Projeto",
+                    DataPropertyName = "Id_Projeto", // <- certifique-se que essa coluna está vindo no SELECT
                     DataSource = projetos,
                     DisplayMember = "Nome",
                     ValueMember = "Id_Projeto",
@@ -87,27 +98,25 @@ namespace MDias.Application
 
                 dgvVoluntario.Columns.Add(comboProjetos);
 
-                // Adicionar evento para exclusão
-                DataGridViewButtonColumn excluirColuna = new DataGridViewButtonColumn()
+                // Botão Excluir
+                dgvVoluntario.Columns.Add(new DataGridViewButtonColumn()
                 {
                     HeaderText = "Excluir",
                     Text = "Excluir",
                     UseColumnTextForButtonValue = true,
                     Name = "Excluir"
-                };
-                dgvVoluntario.Columns.Add(excluirColuna);
+                });
 
-                // Adicioonar evento para edição
-                DataGridViewButtonColumn editarColuna = new DataGridViewButtonColumn()
+                // Botão Editar
+                dgvVoluntario.Columns.Add(new DataGridViewButtonColumn()
                 {
                     HeaderText = "Editar",
                     Text = "Editar",
                     UseColumnTextForButtonValue = true,
                     Name = "Editar"
-                };
-                dgvVoluntario.Columns.Add(editarColuna);
+                });
 
-                // Definir fonte de dados
+                // Define a fonte de dados
                 dgvVoluntario.DataSource = voluntarios;
             }
             catch (Exception ex)
@@ -115,6 +124,7 @@ namespace MDias.Application
                 MessageBox.Show("Erro ao carregar dados: " + ex.Message);
             }
         }
+
 
         private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -171,22 +181,7 @@ namespace MDias.Application
 
         private void dgvVoluntario_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && dgvVoluntario.Columns[e.ColumnIndex].Name == "Projeto")
-            {
-                int idVoluntario = Convert.ToInt32(dgvVoluntario.Rows[e.RowIndex].Cells["Id_Voluntario"].Value);
-                object projetoSelecionado = dgvVoluntario.Rows[e.RowIndex].Cells["Projeto"].Value;
-
-                if (projetoSelecionado != null)
-                {
-                    int idProjeto = Convert.ToInt32(projetoSelecionado);
-
-                    bool sucesso = Participante.SalvarParticipante(idVoluntario, idProjeto); // exemplo de classe
-                    if (sucesso)
-                        MessageBox.Show("Voluntário associado com sucesso!");
-                    else
-                        MessageBox.Show("Não foi possível associar (já existe ou ocorreu erro).");
-                }
-            }
+            
         }
 
         private void dgvVoluntario_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -234,6 +229,11 @@ namespace MDias.Application
                         string telefone = dgvVoluntario.Rows[e.RowIndex].Cells["Telefone"].Value?.ToString();
                         string endereco = dgvVoluntario.Rows[e.RowIndex].Cells["Endereco"].Value?.ToString();
 
+                        // --- Lê o Projeto (ComboBox) ---
+                        object projetoSelecionado = dgvVoluntario.Rows[e.RowIndex].Cells["Projeto"].Value;
+                        int idProjeto = 0;
+                        if (projetoSelecionado != null)
+                            idProjeto = Convert.ToInt32(projetoSelecionado);
 
                         // Monta o objeto Voluntario
                         voluntario Voluntario = new voluntario();
@@ -243,6 +243,7 @@ namespace MDias.Application
                         Voluntario.Habilidade = habilidade;
                         Voluntario.Telefone = telefone;
                         Voluntario.Endereco = endereco;
+                        Voluntario.Id_Projeto = idProjeto; // <- agora passando corretamente
 
                         // Atualiza no banco
                         bool sucesso = Voluntario.EditarVoluntario();
@@ -264,6 +265,11 @@ namespace MDias.Application
                 }
 
             }
+        }
+
+        private void dgvVoluntario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
